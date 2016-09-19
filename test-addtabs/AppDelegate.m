@@ -23,17 +23,6 @@
 @synthesize roomlist;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //FTPオフラインだとクラッシュするための対策案だが効果なし
-//    NSArray *roomlist = @[@"921",@"922",@"923",@"924",@"925",@"931",@"932",@"933",@"934",@"935",
-//                          @"936",@"937",@"938",@"939",@"941",@"942",@"943",@"944",@"945",@"946",
-//                          @"947",@"948",@"949",@"951",@"952",@"953",@"954",@"955",@"956",@"957",
-//                          @"958",@"959",@"総合情報センター",@"不言実行館"];
-//    RoomTableViewController *viewController;
-//    viewController.roomlist = roomlist;
-    
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"roomlist" ofType:@"json"];
-//    NSData *jsondata = [NSData dataWithContentsOfFile:path];
-//    NSArray *roomlist = [NSJSONSerialization JSONObjectWithData:jsondata options:0 error:nil];
     
     [Fabric with:@[CrashlyticsKit]];
     
