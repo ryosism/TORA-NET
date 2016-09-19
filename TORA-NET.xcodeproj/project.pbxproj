@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200348071CCF4EF5000DC110 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200348061CCF4EF5000DC110 /* MapKit.framework */; };
+		200348091CCF5D8D000DC110 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200348081CCF5D8D000DC110 /* CoreLocation.framework */; };
+		201E41131BC42C5D002863D7 /* roomlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 201E41121BC42C5D002863D7 /* roomlist.json */; };
+		208794CA1C04CF6100C1F206 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208794C81C04CF6100C1F206 /* Fabric.framework */; };
+		208794CB1C04CF6100C1F206 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208794C91C04CF6100C1F206 /* Crashlytics.framework */; };
+		20964EB31C202FCA007CF3DA /* libFlurry_7.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20964EB21C202FCA007CF3DA /* libFlurry_7.3.0.a */; };
+		20964EB51C202FDC007CF3DA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20964EB41C202FDC007CF3DA /* Security.framework */; };
+		209A18431C1FD9DC00BAF03E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209A18421C1FD9DC00BAF03E /* SystemConfiguration.framework */; };
+		209FDA131BB284E500649937 /* RoomMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209FDA121BB284E500649937 /* RoomMapViewController.m */; };
+		20E7A0851C2BD9A30089149B /* icons8_cup.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E7A0841C2BD9A30089149B /* icons8_cup.png */; };
+		DD4E546B1AEBFB21009A88AB /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E546A1AEBFB21009A88AB /* FifthViewController.m */; };
+		DD4E546E1AEBFB7E009A88AB /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E546D1AEBFB7E009A88AB /* ThirdViewController.m */; };
+		DD4E54711AEBFB88009A88AB /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E54701AEBFB88009A88AB /* FourthViewController.m */; };
+		DD4E54731AEBFFE6009A88AB /* redo-26.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4E54721AEBFFE6009A88AB /* redo-26.png */; };
+		DD4E54751AEBFFF5009A88AB /* undo-26.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4E54741AEBFFF5009A88AB /* undo-26.png */; };
+		DD4E54851AED12BA009A88AB /* services-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4E54841AED12BA009A88AB /* services-32.png */; };
+		DD54D5FC1B1015AF005EE4CF /* transparent32.png in Resources */ = {isa = PBXBuildFile; fileRef = DD54D5FB1B1015AF005EE4CF /* transparent32.png */; };
+		DD88811D1B3A3AE700445487 /* RoomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD88811C1B3A3AE700445487 /* RoomTableViewController.m */; };
+		DDA557EE1B3A7B3E0044FD6C /* RoomDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA557ED1B3A7B3E0044FD6C /* RoomDetailViewController.m */; };
+		DDAA13C21AF0633400FB0B8C /* map.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DDAA13C11AF0633400FB0B8C /* map.pdf */; };
+		DDB192AA1AEA745900C0CDCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB192A91AEA745900C0CDCF /* main.m */; };
+		DDB192AD1AEA745900C0CDCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB192AC1AEA745900C0CDCF /* AppDelegate.m */; };
+		DDB192B01AEA745900C0CDCF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB192AF1AEA745900C0CDCF /* FirstViewController.m */; };
+		DDB192B31AEA745900C0CDCF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB192B21AEA745900C0CDCF /* SecondViewController.m */; };
+		DDB192B81AEA745900C0CDCF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB192B71AEA745900C0CDCF /* Images.xcassets */; };
+		DDB192BB1AEA745900C0CDCF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB192B91AEA745900C0CDCF /* LaunchScreen.xib */; };
+		DDB192C71AEA745900C0CDCF /* test_addtabsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB192C61AEA745900C0CDCF /* test_addtabsTests.m */; };
+		DDB192E51AEA91CD00C0CDCF /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB192E21AEA91CD00C0CDCF /* home-32.png */; };
+		DDB192E61AEA91CD00C0CDCF /* map_marker-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB192E31AEA91CD00C0CDCF /* map_marker-32.png */; };
+		DDB192E71AEA91CD00C0CDCF /* menu-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB192E41AEA91CD00C0CDCF /* menu-32.png */; };
+		DDB192E91AEA922700C0CDCF /* train-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB192E81AEA922700C0CDCF /* train-32.png */; };
+		DDBB80301B3E4F0400DAF249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBB802E1B3E4F0400DAF249 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDB192C11AEA745900C0CDCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDB1929C1AEA745900C0CDCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDB192A31AEA745900C0CDCF;
+			remoteInfo = "test-addtabs";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		200348061CCF4EF5000DC110 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		200348081CCF5D8D000DC110 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		201E41121BC42C5D002863D7 /* roomlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = roomlist.json; sourceTree = "<group>"; };
+		208794C81C04CF6100C1F206 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		208794C91C04CF6100C1F206 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		20964EB01C202FCA007CF3DA /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		20964EB11C202FCA007CF3DA /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
+		20964EB21C202FCA007CF3DA /* libFlurry_7.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.3.0.a; sourceTree = "<group>"; };
+		20964EB41C202FDC007CF3DA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		209A18421C1FD9DC00BAF03E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		209FDA111BB284E500649937 /* RoomMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomMapViewController.h; sourceTree = "<group>"; };
+		209FDA121BB284E500649937 /* RoomMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomMapViewController.m; sourceTree = "<group>"; };
+		20E7A0841C2BD9A30089149B /* icons8_cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icons8_cup.png; sourceTree = "<group>"; };
+		DD4E54691AEBFB21009A88AB /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
+		DD4E546A1AEBFB21009A88AB /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
+		DD4E546C1AEBFB7E009A88AB /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		DD4E546D1AEBFB7E009A88AB /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		DD4E546F1AEBFB88009A88AB /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		DD4E54701AEBFB88009A88AB /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		DD4E54721AEBFFE6009A88AB /* redo-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redo-26.png"; sourceTree = "<group>"; };
+		DD4E54741AEBFFF5009A88AB /* undo-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "undo-26.png"; sourceTree = "<group>"; };
+		DD4E54841AED12BA009A88AB /* services-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "services-32.png"; sourceTree = "<group>"; };
+		DD54D5FB1B1015AF005EE4CF /* transparent32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent32.png; sourceTree = "<group>"; };
+		DD88811B1B3A3AE700445487 /* RoomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomTableViewController.h; path = ../RoomTableViewController.h; sourceTree = "<group>"; };
+		DD88811C1B3A3AE700445487 /* RoomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomTableViewController.m; path = ../RoomTableViewController.m; sourceTree = "<group>"; };
+		DDA557EC1B3A7B3E0044FD6C /* RoomDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomDetailViewController.h; path = ../RoomDetailViewController.h; sourceTree = "<group>"; };
+		DDA557ED1B3A7B3E0044FD6C /* RoomDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomDetailViewController.m; path = ../RoomDetailViewController.m; sourceTree = "<group>"; };
+		DDAA13C11AF0633400FB0B8C /* map.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = map.pdf; sourceTree = "<group>"; };
+		DDB192A41AEA745900C0CDCF /* TORA-NET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TORA-NET.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB192A81AEA745900C0CDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDB192A91AEA745900C0CDCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDB192AB1AEA745900C0CDCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDB192AC1AEA745900C0CDCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDB192AE1AEA745900C0CDCF /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		DDB192AF1AEA745900C0CDCF /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		DDB192B11AEA745900C0CDCF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		DDB192B21AEA745900C0CDCF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		DDB192B71AEA745900C0CDCF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDB192BA1AEA745900C0CDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DDB192C01AEA745900C0CDCF /* TORA-NETTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TORA-NETTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB192C51AEA745900C0CDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDB192C61AEA745900C0CDCF /* test_addtabsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test_addtabsTests.m; sourceTree = "<group>"; };
+		DDB192E21AEA91CD00C0CDCF /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-32.png"; path = "test-addtabs/home-32.png"; sourceTree = "<group>"; };
+		DDB192E31AEA91CD00C0CDCF /* map_marker-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map_marker-32.png"; path = "test-addtabs/map_marker-32.png"; sourceTree = "<group>"; };
+		DDB192E41AEA91CD00C0CDCF /* menu-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-32.png"; path = "test-addtabs/menu-32.png"; sourceTree = "<group>"; };
+		DDB192E81AEA922700C0CDCF /* train-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "train-32.png"; path = "test-addtabs/train-32.png"; sourceTree = "<group>"; };
+		DDBB802F1B3E4F0400DAF249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDB192A11AEA745900C0CDCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200348091CCF5D8D000DC110 /* CoreLocation.framework in Frameworks */,
+				200348071CCF4EF5000DC110 /* MapKit.framework in Frameworks */,
+				20964EB51C202FDC007CF3DA /* Security.framework in Frameworks */,
+				209A18431C1FD9DC00BAF03E /* SystemConfiguration.framework in Frameworks */,
+				20964EB31C202FCA007CF3DA /* libFlurry_7.3.0.a in Frameworks */,
+				208794CB1C04CF6100C1F206 /* Crashlytics.framework in Frameworks */,
+				208794CA1C04CF6100C1F206 /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB192BD1AEA745900C0CDCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20964EAF1C202FCA007CF3DA /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				20964EB01C202FCA007CF3DA /* Flurry.h */,
+				20964EB11C202FCA007CF3DA /* FlurryWatch.h */,
+				20964EB21C202FCA007CF3DA /* libFlurry_7.3.0.a */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
+		DD4E54781AEC7716009A88AB /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				201E41121BC42C5D002863D7 /* roomlist.json */,
+				DDAA13C11AF0633400FB0B8C /* map.pdf */,
+				DD4E54841AED12BA009A88AB /* services-32.png */,
+				DD4E54741AEBFFF5009A88AB /* undo-26.png */,
+				DD4E54721AEBFFE6009A88AB /* redo-26.png */,
+				DDB192E21AEA91CD00C0CDCF /* home-32.png */,
+				DDB192E31AEA91CD00C0CDCF /* map_marker-32.png */,
+				DDB192E41AEA91CD00C0CDCF /* menu-32.png */,
+				DDB192E81AEA922700C0CDCF /* train-32.png */,
+				DD54D5FB1B1015AF005EE4CF /* transparent32.png */,
+				20E7A0841C2BD9A30089149B /* icons8_cup.png */,
+			);
+			name = resource;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DDB1929B1AEA745900C0CDCF = {
+			isa = PBXGroup;
+			children = (
+				DDB192A61AEA745900C0CDCF /* TORA-NET */,
+				DDB192C31AEA745900C0CDCF /* TORA-NET */,
+				DDB192A51AEA745900C0CDCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDB192A51AEA745900C0CDCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDB192A41AEA745900C0CDCF /* TORA-NET.app */,
+				DDB192C01AEA745900C0CDCF /* TORA-NETTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDB192A61AEA745900C0CDCF /* TORA-NET */ = {
+			isa = PBXGroup;
+			children = (
+				DD4E54781AEC7716009A88AB /* resource */,
+				DDB192AB1AEA745900C0CDCF /* AppDelegate.h */,
+				DDB192AC1AEA745900C0CDCF /* AppDelegate.m */,
+				DDB192AE1AEA745900C0CDCF /* FirstViewController.h */,
+				DDB192AF1AEA745900C0CDCF /* FirstViewController.m */,
+				DDB192B11AEA745900C0CDCF /* SecondViewController.h */,
+				DDB192B21AEA745900C0CDCF /* SecondViewController.m */,
+				DD4E546C1AEBFB7E009A88AB /* ThirdViewController.h */,
+				DD4E546D1AEBFB7E009A88AB /* ThirdViewController.m */,
+				DD4E546F1AEBFB88009A88AB /* FourthViewController.h */,
+				DD4E54701AEBFB88009A88AB /* FourthViewController.m */,
+				DD4E54691AEBFB21009A88AB /* FifthViewController.h */,
+				DD4E546A1AEBFB21009A88AB /* FifthViewController.m */,
+				DDBB802E1B3E4F0400DAF249 /* Main.storyboard */,
+				209FDA111BB284E500649937 /* RoomMapViewController.h */,
+				209FDA121BB284E500649937 /* RoomMapViewController.m */,
+				DD88811B1B3A3AE700445487 /* RoomTableViewController.h */,
+				DD88811C1B3A3AE700445487 /* RoomTableViewController.m */,
+				DDA557EC1B3A7B3E0044FD6C /* RoomDetailViewController.h */,
+				DDA557ED1B3A7B3E0044FD6C /* RoomDetailViewController.m */,
+				DDB192B71AEA745900C0CDCF /* Images.xcassets */,
+				DDB192B91AEA745900C0CDCF /* LaunchScreen.xib */,
+				DDDABFA61B0E49C200B800AC /* Freakworks */,
+				DDB192A71AEA745900C0CDCF /* Supporting Files */,
+			);
+			name = "TORA-NET";
+			path = "test-addtabs";
+			sourceTree = "<group>";
+		};
+		DDB192A71AEA745900C0CDCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDB192A91AEA745900C0CDCF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDB192C31AEA745900C0CDCF /* TORA-NET */ = {
+			isa = PBXGroup;
+			children = (
+				DDB192C61AEA745900C0CDCF /* test_addtabsTests.m */,
+				DDB192C41AEA745900C0CDCF /* Supporting Files */,
+			);
+			name = "TORA-NET";
+			path = "test-addtabsTests";
+			sourceTree = "<group>";
+		};
+		DDB192C41AEA745900C0CDCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDB192C51AEA745900C0CDCF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDDABFA61B0E49C200B800AC /* Freakworks */ = {
+			isa = PBXGroup;
+			children = (
+				200348081CCF5D8D000DC110 /* CoreLocation.framework */,
+				200348061CCF4EF5000DC110 /* MapKit.framework */,
+				20964EB41C202FDC007CF3DA /* Security.framework */,
+				209A18421C1FD9DC00BAF03E /* SystemConfiguration.framework */,
+				208794C81C04CF6100C1F206 /* Fabric.framework */,
+				208794C91C04CF6100C1F206 /* Crashlytics.framework */,
+				DDB192A81AEA745900C0CDCF /* Info.plist */,
+				20964EAF1C202FCA007CF3DA /* Flurry */,
+			);
+			name = Freakworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDB192A31AEA745900C0CDCF /* TORA-NET */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDB192CA1AEA745900C0CDCF /* Build configuration list for PBXNativeTarget "TORA-NET" */;
+			buildPhases = (
+				DDB192A01AEA745900C0CDCF /* Sources */,
+				DDB192A11AEA745900C0CDCF /* Frameworks */,
+				DDB192A21AEA745900C0CDCF /* Resources */,
+				208794C71C04CEED00C1F206 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TORA-NET";
+			productName = "test-addtabs";
+			productReference = DDB192A41AEA745900C0CDCF /* TORA-NET.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDB192BF1AEA745900C0CDCF /* TORA-NETTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDB192CD1AEA745900C0CDCF /* Build configuration list for PBXNativeTarget "TORA-NETTests" */;
+			buildPhases = (
+				DDB192BC1AEA745900C0CDCF /* Sources */,
+				DDB192BD1AEA745900C0CDCF /* Frameworks */,
+				DDB192BE1AEA745900C0CDCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDB192C21AEA745900C0CDCF /* PBXTargetDependency */,
+			);
+			name = "TORA-NETTests";
+			productName = "test-addtabsTests";
+			productReference = DDB192C01AEA745900C0CDCF /* TORA-NETTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDB1929C1AEA745900C0CDCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Ryo;
+				TargetAttributes = {
+					DDB192A31AEA745900C0CDCF = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = WQ6E4DAU7T;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
+					};
+					DDB192BF1AEA745900C0CDCF = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = WQ6E4DAU7T;
+						TestTargetID = DDB192A31AEA745900C0CDCF;
+					};
+				};
+			};
+			buildConfigurationList = DDB1929F1AEA745900C0CDCF /* Build configuration list for PBXProject "TORA-NET" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDB1929B1AEA745900C0CDCF;
+			productRefGroup = DDB192A51AEA745900C0CDCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDB192A31AEA745900C0CDCF /* TORA-NET */,
+				DDB192BF1AEA745900C0CDCF /* TORA-NETTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDB192A21AEA745900C0CDCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD54D5FC1B1015AF005EE4CF /* transparent32.png in Resources */,
+				DDB192E91AEA922700C0CDCF /* train-32.png in Resources */,
+				DDB192BB1AEA745900C0CDCF /* LaunchScreen.xib in Resources */,
+				DDAA13C21AF0633400FB0B8C /* map.pdf in Resources */,
+				DDB192E51AEA91CD00C0CDCF /* home-32.png in Resources */,
+				DD4E54851AED12BA009A88AB /* services-32.png in Resources */,
+				201E41131BC42C5D002863D7 /* roomlist.json in Resources */,
+				DD4E54751AEBFFF5009A88AB /* undo-26.png in Resources */,
+				DD4E54731AEBFFE6009A88AB /* redo-26.png in Resources */,
+				DDB192B81AEA745900C0CDCF /* Images.xcassets in Resources */,
+				DDB192E71AEA91CD00C0CDCF /* menu-32.png in Resources */,
+				DDBB80301B3E4F0400DAF249 /* Main.storyboard in Resources */,
+				20E7A0851C2BD9A30089149B /* icons8_cup.png in Resources */,
+				DDB192E61AEA91CD00C0CDCF /* map_marker-32.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB192BE1AEA745900C0CDCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		208794C71C04CEED00C1F206 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run a00e30dc8e843fe7268f540d8962cc0790012e3f 11acd792fee707cdbd4520b6b3da01b1b486b4860379694a6297ca594a611aae";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDB192A01AEA745900C0CDCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209FDA131BB284E500649937 /* RoomMapViewController.m in Sources */,
+				DD88811D1B3A3AE700445487 /* RoomTableViewController.m in Sources */,
+				DDB192B31AEA745900C0CDCF /* SecondViewController.m in Sources */,
+				DDB192AD1AEA745900C0CDCF /* AppDelegate.m in Sources */,
+				DD4E546E1AEBFB7E009A88AB /* ThirdViewController.m in Sources */,
+				DDB192B01AEA745900C0CDCF /* FirstViewController.m in Sources */,
+				DDA557EE1B3A7B3E0044FD6C /* RoomDetailViewController.m in Sources */,
+				DD4E546B1AEBFB21009A88AB /* FifthViewController.m in Sources */,
+				DD4E54711AEBFB88009A88AB /* FourthViewController.m in Sources */,
+				DDB192AA1AEA745900C0CDCF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB192BC1AEA745900C0CDCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB192C71AEA745900C0CDCF /* test_addtabsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDB192C21AEA745900C0CDCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDB192A31AEA745900C0CDCF /* TORA-NET */;
+			targetProxy = DDB192C11AEA745900C0CDCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDB192B91AEA745900C0CDCF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDB192BA1AEA745900C0CDCF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		DDBB802E1B3E4F0400DAF249 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDBB802F1B3E4F0400DAF249 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDB192C81AEA745900C0CDCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ryo Sobue (WQ6E4DAU7T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ryo Sobue (WQ6E4DAU7T)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "bbec48bd-ab25-4d1a-9490-d7d12ce37743";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDB192C91AEA745900C0CDCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ryo Sobue (WQ6E4DAU7T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ryo Sobue (WQ6E4DAU7T)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "bbec48bd-ab25-4d1a-9490-d7d12ce37743";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDB192CB1AEA745900C0CDCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test-addtabs",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "test-addtabs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test-addtabs/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "TORA-NET";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		DDB192CC1AEA745900C0CDCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test-addtabs",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "test-addtabs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test-addtabs/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "TORA-NET";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		DDB192CE1AEA745900C0CDCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "test-addtabsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "TORA-NETTests";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-addtabs.app/test-addtabs";
+			};
+			name = Debug;
+		};
+		DDB192CF1AEA745900C0CDCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "test-addtabsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "TORA-NETTests";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-addtabs.app/test-addtabs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDB1929F1AEA745900C0CDCF /* Build configuration list for PBXProject "TORA-NET" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB192C81AEA745900C0CDCF /* Debug */,
+				DDB192C91AEA745900C0CDCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDB192CA1AEA745900C0CDCF /* Build configuration list for PBXNativeTarget "TORA-NET" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB192CB1AEA745900C0CDCF /* Debug */,
+				DDB192CC1AEA745900C0CDCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDB192CD1AEA745900C0CDCF /* Build configuration list for PBXNativeTarget "TORA-NETTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB192CE1AEA745900C0CDCF /* Debug */,
+				DDB192CF1AEA745900C0CDCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDB1929C1AEA745900C0CDCF /* Project object */;
+}
