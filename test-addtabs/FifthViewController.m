@@ -50,7 +50,7 @@
     NSURLRequest *campainreq = [NSURLRequest requestWithURL:campain];
     [_campain loadRequest: campainreq];
     
-    NSURL        *e_hon    = [NSURL URLWithString:@"http://www.e-hon.ne.jp"];
+    NSURL        *e_hon    = [NSURL URLWithString:@"http://m.e-hon.ne.jp/"];
     NSURLRequest *e_honreq = [NSURLRequest requestWithURL:e_hon];
     [_e_hon loadRequest: e_honreq];
     
