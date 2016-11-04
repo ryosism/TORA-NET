@@ -46,62 +46,6 @@
         pintitle = @"21号館";
         pincomment = @"2110~2140,4階以降ゼミ室";
     }
-    else if([_gettitle hasPrefix:@"総合情報センター"])
-    {
-        self.navigationbartitle.title = @"総合情報センターの位置";
-        co.latitude  = 35.272694;
-        co.longitude = 137.012855;
-        pintitle = @"総合情報センター";
-//        pincomment = @"";
-    }
-    else if([_gettitle hasPrefix:@"不言実行館"] || [_gettitle hasPrefix:@"メインアリーナ"])
-    {
-        self.navigationbartitle.title = @"不言実行館の位置";
-        co.latitude  = 35.274246;
-        co.longitude = 137.014470;
-        pintitle = @"不言実行館";
-        pincomment = @"及びメインアリーナ";
-    }
-    else if([_gettitle hasPrefix:@"第１学生食堂"])
-    {
-        self.navigationbartitle.title = @"第１学生食堂の位置";
-        co.latitude  = 35.273983;
-        co.longitude = 137.013775;
-        pintitle = @"第１学生食堂";
-//        pincomment = @"";
-    }
-    else if([_gettitle hasPrefix:@"第２学生食堂"])
-    {
-        self.navigationbartitle.title = @"第２学生食堂の位置";
-        co.latitude  = 35.274262;
-        co.longitude = 137.014741;
-        pintitle = @"第２学生食堂";
-//        pincomment = @"";
-    }
-    else if([_gettitle hasPrefix:@"第３学生食堂"])
-    {
-        self.navigationbartitle.title = @"第３学生食堂の位置";
-        co.latitude  = 35.275482;
-        co.longitude = 137.013381;
-        pintitle = @"第３学生食堂";
-//        pincomment = @"";
-    }
-    else if([_gettitle hasPrefix:@"第４学生食堂"])
-    {
-        self.navigationbartitle.title = @"第４学生食堂の位置";
-        co.latitude  = 35.276248;
-        co.longitude = 137.014658;
-        pintitle = @"第４学生食堂";
-//        pincomment = @"";
-    }
-    else if([_gettitle hasPrefix:@"三浦記念図書館"])
-    {
-        self.navigationbartitle.title = @"三浦記念図書館の位置";
-        co.latitude  = 35.273638;
-        co.longitude = 137.013007;
-        pintitle = @"三浦記念図書館";
-//        pincomment = @"";
-    }
     else
     {
         NSString *title = [_gettitle stringByAppendingString:@"の位置"];
