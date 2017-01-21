@@ -10,6 +10,8 @@
 #import "RoomTableViewController.h"
 #import "RoomDetailViewController.h"
 
+#import <NCMB/NCMB.h>
+
 @interface RoomTableViewController () <UISearchBarDelegate, UISearchDisplayDelegate,UITableViewDelegate, UITableViewDataSource>
 
 @end
@@ -43,20 +45,23 @@
 {
     // 更新開始
     [self.refreshControl beginRefreshing];
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+
+    //testクラスのNCMBObjectを作成
+    NCMBObject *pushtest = [NCMBObject objectWithClassName:@"test"];
     
-    NSURL *url = [NSURL URLWithString:@"http://www.tora-net.tkg.xyz/iOS/resource/roomlist.json"];
-    NSURLRequest *urlreq = [NSURLRequest requestWithURL:url];
-    NSURLResponse *response;
-    NSData *jsondata = [NSURLConnection sendSynchronousRequest:urlreq returningResponse:&response error:nil];
-    appDelegate.roomlist = [NSJSONSerialization JSONObjectWithData:jsondata options:0 error:nil];
+    //オブジェクトに値を設定
+    [pushtest setObject:@"value" forKey:@"key"];
     
-    self.searchlist = appDelegate.roomlist;
+    //データストアへの登録を実施
+    [pushtest saveInBackgroundWithBlock:^(NSError *error) {
+        if (error){
+            //保存に失敗した場合の処理
+        } else {
+            //保存に成功した場合の処理
+        }
+    }];
     
     NSLog(@"%@",self.searchlist);
-    NSLog(@"%lu",self.searchlist.count);
-    
-    [self.roomtable reloadData];
     
     // 更新終了
     [self.refreshControl endRefreshing];

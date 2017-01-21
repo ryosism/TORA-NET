@@ -12,6 +12,8 @@
 #import <Crashlytics/Crashlytics.h>
 #import "Flurry/Flurry.h"
 
+#import <NCMB/NCMB.h>
+
 @interface AppDelegate ()
 
 @end
@@ -27,6 +29,9 @@
     [Fabric with:@[CrashlyticsKit]];
     
     [Flurry startSession:@"2FB8KXS42NY2ZRPV6X56"];
+    
+    // APIキーの設定とSDK初期化
+    [NCMB setApplicationKey:@"7b4ebd76d1d7e59fea7a1ddaaff2dcfe2c9461fb26b5a8d56a9e151e7f141666" clientKey:@"13bc5798871acb56e0139c4c1ee2559d33efc3480fedc3b9b4ac139d6a4a8b80"];
     
     return YES;
 }
