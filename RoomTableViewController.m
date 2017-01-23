@@ -41,15 +41,10 @@
     //--------------------------------------------
 }
 
-#pragma mark - 引っ張ってリフレッシュ
-- (void)controlRefresh:(id)sender
-{
+- (void)getRecentTabledata{
+    NSMutableArray *recentTableData = [NSMutableArray array];
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    self.roomNumberList = [NSMutableArray array];//テーブルリストを初期化、一度空に
     
-    // 更新開始
-    [self.refreshControl beginRefreshing];
-
     // roomlistクラスを検索するクエリを作成
     NCMBQuery *query = [NCMBQuery queryWithClassName:@"roomlist"];
     
@@ -64,21 +59,30 @@
         } else {
             // 検索に成功した場合の処理
             NSLog(@"検索に成功しました。");
-            
             //取得したオブジェクトの中の"num"のカラムをレコードごとに取得、からにしたテーブルリストに追加していく
             for (id object in objects){
-                [self.roomNumberList addObject:[object objectForKey:@"num"]];
+                [recentTableData addObject:[object objectForKey:@"num"]];
             }
-            
-            //データのコピー、各変数へデータを更新させる
-            self.dataSource = self.roomNumberList;
-            self.searchlist = self.roomNumberList;
-            appDelegate.roomlist = self.roomNumberList;
-
-            // テーブルビューをリロード
-            [self.roomtable reloadData];
         }
+        // テーブルビューをリロード
+        [self.roomtable reloadData];
+        
+        //値をappdelegateに置いてある共有変数にぶち込む
+        appDelegate.roomlist = recentTableData;
     }];
+}
+
+#pragma mark - 引っ張ってリフレッシュ
+- (void)controlRefresh:(id)sender
+{
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    //データのコピー、各変数へデータを更新させる
+        //ここで一気にテーブルビューも更新するよ！
+        [self getRecentTabledata];
+    self.dataSource = appDelegate.roomlist;
+    self.searchlist = appDelegate.roomlist;
+
     // 更新終了
     [self.refreshControl endRefreshing];
 }
