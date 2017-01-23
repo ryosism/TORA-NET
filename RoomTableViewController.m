@@ -46,25 +46,47 @@
     // 更新開始
     [self.refreshControl beginRefreshing];
 
-    //testクラスのNCMBObjectを作成
-    NCMBObject *pushtest = [NCMBObject objectWithClassName:@"test"];
+    //------------------------------------------------------------------------
+    // roomlistクラスを検索するクエリを作成
+    NCMBQuery *query = [NCMBQuery queryWithClassName:@"roomlist"];
     
-    //オブジェクトに値を設定
-    [pushtest setObject:@"value" forKey:@"key"];
+    // scoreの降順でデータを取得するように設定する
+    [query addDescendingOrder:@"num"];
     
-    //データストアへの登録を実施
-    [pushtest saveInBackgroundWithBlock:^(NSError *error) {
-        if (error){
-            //保存に失敗した場合の処理
+    do{
+    // データストアを検索
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+            // 検索に失敗した場合の処理
+            NSLog(@"検索に失敗しました。エラーコード：%ld", error.code);
         } else {
-            //保存に成功した場合の処理
+            // 検索に成功した場合の処理
+            NSLog(@"検索に成功しました。");
+//            for (NCMBObject *object in objects) {
+//                NSLog(@"%@", object.objectId);
+//            }
+            
+            for (NCMBObject *roomdata in objects) {
+                NSLog(@"%@", roomdata);
+            }
+            
+            // 取得したデータを格納
+            self.roomlist = objects;
         }
     }];
+        
+    }while(self.roomlist);
     
-    NSLog(@"%@",self.searchlist);
+    //----------------------------------------------------------------------
+
+
+    
+    NSLog(@"%@",self.roomlist);
     
     // 更新終了
     [self.refreshControl endRefreshing];
+    // テーブルビューをリロード
+    [self.roomtable reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
