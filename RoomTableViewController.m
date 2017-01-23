@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     _roomtable.tableHeaderView = _searchbar;
     _searchbar.delegate =self;
@@ -41,19 +41,21 @@
     //--------------------------------------------
 }
 
+#pragma mark - 引っ張ってリフレッシュ
 - (void)controlRefresh:(id)sender
 {
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    self.roomNumberList = [NSMutableArray array];//テーブルリストを初期化、一度空に
+    
     // 更新開始
     [self.refreshControl beginRefreshing];
 
-    //------------------------------------------------------------------------
     // roomlistクラスを検索するクエリを作成
     NCMBQuery *query = [NCMBQuery queryWithClassName:@"roomlist"];
     
     // scoreの降順でデータを取得するように設定する
-    [query addDescendingOrder:@"num"];
+    [query addAscendingOrder:@"num"];
     
-    do{
     // データストアを検索
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (error) {
@@ -62,39 +64,30 @@
         } else {
             // 検索に成功した場合の処理
             NSLog(@"検索に成功しました。");
-//            for (NCMBObject *object in objects) {
-//                NSLog(@"%@", object.objectId);
-//            }
             
-            for (NCMBObject *roomdata in objects) {
-                NSLog(@"%@", roomdata);
+            //取得したオブジェクトの中の"num"のカラムをレコードごとに取得、からにしたテーブルリストに追加していく
+            for (id object in objects){
+                [self.roomNumberList addObject:[object objectForKey:@"num"]];
             }
             
-            // 取得したデータを格納
-            self.roomlist = objects;
+            //データのコピー、各変数へデータを更新させる
+            self.dataSource = self.roomNumberList;
+            self.searchlist = self.roomNumberList;
+            appDelegate.roomlist = self.roomNumberList;
+
+            // テーブルビューをリロード
+            [self.roomtable reloadData];
         }
     }];
-        
-    }while(self.roomlist);
-    
-    //----------------------------------------------------------------------
-
-
-    
-    NSLog(@"%@",self.roomlist);
-    
     // 更新終了
     [self.refreshControl endRefreshing];
-    // テーブルビューをリロード
-    [self.roomtable reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-#pragma mark - Table view data source
 
+#pragma mark - テーブルビュー
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
     return 1;
@@ -102,13 +95,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    NSInteger datacount;
     if(tableView == self.searchDisplayController.searchResultsTableView)
     {
-        datacount = self.dataSource.count;
-        return datacount;
+        return self.dataSource.count;
     }
-    
     else
     {
         return self.searchlist.count;
@@ -116,6 +106,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     NSString *cellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -131,21 +122,22 @@
     }
     else
     {
-        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
         cell.textLabel.text = [appDelegate.roomlist objectAtIndex:indexPath.row];
     }
     return cell;
 }
-//------------------------------------------------------//検索結果によって表示するテーブルを変更、遷移機能
+
+#pragma mark - 検索結果によって表示するテーブルを変更、遷移機能
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //検索中の黒い画面なら
     if(tableView == self.searchDisplayController.searchResultsTableView)
     {
         self.searchresult = self.dataSource;
         
         NSIndexPath *resultindexPath =self.searchresult[indexPath.row];
         
-        NSString *searchtitle = resultindexPath;
+        NSString *searchtitle = (NSString *)resultindexPath;
         self.searchflag=1;
         self.room = searchtitle;
         
@@ -153,14 +145,14 @@
         [self.roomtable deselectRowAtIndexPath:indexPath animated:YES];
     }
 }
-
+#pragma mark 画面遷移
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if(self.searchflag==0)
     {
         NSIndexPath *indexPath =[self.roomtable indexPathForSelectedRow];
         
-        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+        AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
         NSString *title = appDelegate.roomlist[indexPath.row];
         
         RoomDetailViewController *viewController = (RoomDetailViewController *)[segue destinationViewController];
@@ -177,9 +169,8 @@
         self.searchflag=0;
     }
 }
-//--------------------------------------------------------------------------//
 
-//検索部分
+#pragma mark 検索部分
 -(void)filterContainsWithSearchText:(NSString *)searchText
 {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@",searchText];

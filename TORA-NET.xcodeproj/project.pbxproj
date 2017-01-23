@@ -335,6 +335,7 @@
 					DDB192A31AEA745900C0CDCF = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = WQ6E4DAU7T;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -659,13 +660,14 @@
 				BUNDLE_LOADER = "${BUNDLE_LOADER}";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "test-addtabs/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -688,6 +690,7 @@
 				BUNDLE_LOADER = "${BUNDLE_LOADER}";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -695,7 +698,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "test-addtabs/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -713,7 +716,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0871F02F48E04B445C2FED28 /* Pods-TORA-NET-TORA-NETTests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "${BUNDLE_LOADER}";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -727,7 +729,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "TORA-NETTests";
 				PROVISIONING_PROFILE = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-addtabs.app/test-addtabs";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TORA-NET.app/TORA-NET";
 			};
 			name = Debug;
 		};
@@ -735,7 +737,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A05824253285BCC15B6F24C9 /* Pods-TORA-NET-TORA-NETTests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "${BUNDLE_LOADER}";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -745,7 +746,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "TORA-NETTests";
 				PROVISIONING_PROFILE = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-addtabs.app/test-addtabs";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TORA-NET.app/TORA-NET";
 			};
 			name = Release;
 		};

@@ -20,6 +20,8 @@
 @property (nonatomic) NSString *room;
 @property (nonatomic) NSArray *roomlist;
 
+@property (nonatomic) NSMutableArray *roomNumberList;
+
 @property(nonatomic) UIRefreshControl *refreshControl;
 
 @end
