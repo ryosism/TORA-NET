@@ -69,7 +69,7 @@
                 [recentTableData addObject:[object objectForKey:@"num"]];
             }
         }
-        if (!objects) {
+        if (objects) {
             //値をappdelegateに置いてある共有変数にぶち込む
             appDelegate.roomlist = recentTableData;
             // テーブルビューをリロード
