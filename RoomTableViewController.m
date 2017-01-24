@@ -10,6 +10,8 @@
 #import "RoomTableViewController.h"
 #import "RoomDetailViewController.h"
 
+#import <NCMB/NCMB.h>
+
 @interface RoomTableViewController () <UISearchBarDelegate, UISearchDisplayDelegate,UITableViewDelegate, UITableViewDataSource>
 
 @end
@@ -18,9 +20,14 @@
 
 @synthesize roomlist;
 
+- (void)viewWillAppear:(BOOL)animated{
+    //データのコピー、各変数へデータを更新させる
+    [self getRecentTabledata];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     _roomtable.tableHeaderView = _searchbar;
     _searchbar.delegate =self;
@@ -39,35 +46,64 @@
     //--------------------------------------------
 }
 
+- (void)getRecentTabledata{
+    NSMutableArray *recentTableData = [NSMutableArray array];
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    // roomlistクラスを検索するクエリを作成
+    NCMBQuery *query = [NCMBQuery queryWithClassName:@"roomlist"];
+    
+    // scoreの降順でデータを取得するように設定する
+    [query addAscendingOrder:@"num"];
+    
+    // データストアを検索
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+            // 検索に失敗した場合の処理
+            NSLog(@"検索に失敗しました。エラーコード：%ld", error.code);
+        } else {
+            // 検索に成功した場合の処理
+            NSLog(@"検索に成功しました。");
+            //取得したオブジェクトの中の"num"のカラムをレコードごとに取得、からにしたテーブルリストに追加していく
+            for (id object in objects){
+                [recentTableData addObject:[object objectForKey:@"num"]];
+            }
+        }
+        if (!objects) {
+            //値をappdelegateに置いてある共有変数にぶち込む
+            appDelegate.roomlist = recentTableData;
+            // テーブルビューをリロード
+            [self.roomtable reloadData];
+        }else{
+            UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"接続失敗" message:@"講義室情報の更新に失敗しました。\n電波の良いところでもう一度お試しください。" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+            [alertView show];
+        }
+
+        
+
+    }];
+}
+
+#pragma mark - 引っ張ってリフレッシュ
 - (void)controlRefresh:(id)sender
 {
-    // 更新開始
-    [self.refreshControl beginRefreshing];
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
-    NSURL *url = [NSURL URLWithString:@"http://www.tora-net.tkg.xyz/iOS/resource/roomlist.json"];
-    NSURLRequest *urlreq = [NSURLRequest requestWithURL:url];
-    NSURLResponse *response;
-    NSData *jsondata = [NSURLConnection sendSynchronousRequest:urlreq returningResponse:&response error:nil];
-    appDelegate.roomlist = [NSJSONSerialization JSONObjectWithData:jsondata options:0 error:nil];
-    
+    //データのコピー、各変数へデータを更新させる
+        //ここで一気にテーブルビューも更新するよ！
+        [self getRecentTabledata];
+    self.dataSource = appDelegate.roomlist;
     self.searchlist = appDelegate.roomlist;
-    
-    NSLog(@"%@",self.searchlist);
-    NSLog(@"%lu",self.searchlist.count);
-    
-    [self.roomtable reloadData];
-    
+
     // 更新終了
     [self.refreshControl endRefreshing];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-#pragma mark - Table view data source
 
+#pragma mark - テーブルビュー
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
     return 1;
@@ -75,13 +111,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    NSInteger datacount;
     if(tableView == self.searchDisplayController.searchResultsTableView)
     {
-        datacount = self.dataSource.count;
-        return datacount;
+        return self.dataSource.count;
     }
-    
     else
     {
         return self.searchlist.count;
@@ -89,6 +122,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     NSString *cellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -104,21 +138,22 @@
     }
     else
     {
-        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
         cell.textLabel.text = [appDelegate.roomlist objectAtIndex:indexPath.row];
     }
     return cell;
 }
-//------------------------------------------------------//検索結果によって表示するテーブルを変更、遷移機能
+
+#pragma mark - 検索結果によって表示するテーブルを変更、遷移機能
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //検索中の黒い画面なら
     if(tableView == self.searchDisplayController.searchResultsTableView)
     {
         self.searchresult = self.dataSource;
         
         NSIndexPath *resultindexPath =self.searchresult[indexPath.row];
         
-        NSString *searchtitle = resultindexPath;
+        NSString *searchtitle = (NSString *)resultindexPath;
         self.searchflag=1;
         self.room = searchtitle;
         
@@ -126,14 +161,14 @@
         [self.roomtable deselectRowAtIndexPath:indexPath animated:YES];
     }
 }
-
+#pragma mark 画面遷移
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if(self.searchflag==0)
     {
         NSIndexPath *indexPath =[self.roomtable indexPathForSelectedRow];
         
-        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+        AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
         NSString *title = appDelegate.roomlist[indexPath.row];
         
         RoomDetailViewController *viewController = (RoomDetailViewController *)[segue destinationViewController];
@@ -150,9 +185,8 @@
         self.searchflag=0;
     }
 }
-//--------------------------------------------------------------------------//
 
-//検索部分
+#pragma mark 検索部分
 -(void)filterContainsWithSearchText:(NSString *)searchText
 {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@",searchText];

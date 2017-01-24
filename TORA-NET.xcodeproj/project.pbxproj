@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FBE894A9557811E44AC9100 /* libPods-TORA-NET.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 117390E9C648849469F91605 /* libPods-TORA-NET.a */; };
 		200348071CCF4EF5000DC110 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200348061CCF4EF5000DC110 /* MapKit.framework */; };
 		200348091CCF5D8D000DC110 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200348081CCF5D8D000DC110 /* CoreLocation.framework */; };
 		201E41131BC42C5D002863D7 /* roomlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 201E41121BC42C5D002863D7 /* roomlist.json */; };
@@ -21,6 +22,7 @@
 		20DA21E21D9E262C001C26F9 /* undo-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21E01D9E262C001C26F9 /* undo-26.png */; };
 		20DA21E41D9E263E001C26F9 /* transparent32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21E31D9E263E001C26F9 /* transparent32.png */; };
 		20DA21E61D9E2646001C26F9 /* icons8_cup.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21E51D9E2646001C26F9 /* icons8_cup.png */; };
+		4EF1295D49BE601ADBE5E8DD /* libPods-TORA-NET-TORA-NETTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C1DEF78552D3794EE79AF6 /* libPods-TORA-NET-TORA-NETTests.a */; };
 		DD4E546B1AEBFB21009A88AB /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E546A1AEBFB21009A88AB /* FifthViewController.m */; };
 		DD4E546E1AEBFB7E009A88AB /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E546D1AEBFB7E009A88AB /* ThirdViewController.m */; };
 		DD4E54711AEBFB88009A88AB /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E54701AEBFB88009A88AB /* FourthViewController.m */; };
@@ -52,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081BE28D70C67B337DF13FD5 /* Pods-TORA-NET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TORA-NET.release.xcconfig"; path = "Pods/Target Support Files/Pods-TORA-NET/Pods-TORA-NET.release.xcconfig"; sourceTree = "<group>"; };
+		0871F02F48E04B445C2FED28 /* Pods-TORA-NET-TORA-NETTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TORA-NET-TORA-NETTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TORA-NET-TORA-NETTests/Pods-TORA-NET-TORA-NETTests.debug.xcconfig"; sourceTree = "<group>"; };
+		117390E9C648849469F91605 /* libPods-TORA-NET.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TORA-NET.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		200348061CCF4EF5000DC110 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		200348081CCF5D8D000DC110 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		201E41121BC42C5D002863D7 /* roomlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = roomlist.json; sourceTree = "<group>"; };
@@ -69,6 +74,9 @@
 		20DA21E01D9E262C001C26F9 /* undo-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "undo-26.png"; path = "test-addtabs/undo-26.png"; sourceTree = "<group>"; };
 		20DA21E31D9E263E001C26F9 /* transparent32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = transparent32.png; path = "test-addtabs/transparent32.png"; sourceTree = "<group>"; };
 		20DA21E51D9E2646001C26F9 /* icons8_cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icons8_cup.png; path = "test-addtabs/icons8_cup.png"; sourceTree = "<group>"; };
+		2F972392AA60379A4BBDA957 /* Pods-TORA-NET.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TORA-NET.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TORA-NET/Pods-TORA-NET.debug.xcconfig"; sourceTree = "<group>"; };
+		90C1DEF78552D3794EE79AF6 /* libPods-TORA-NET-TORA-NETTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TORA-NET-TORA-NETTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05824253285BCC15B6F24C9 /* Pods-TORA-NET-TORA-NETTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TORA-NET-TORA-NETTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TORA-NET-TORA-NETTests/Pods-TORA-NET-TORA-NETTests.release.xcconfig"; sourceTree = "<group>"; };
 		DD4E54691AEBFB21009A88AB /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
 		DD4E546A1AEBFB21009A88AB /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 		DD4E546C1AEBFB7E009A88AB /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
@@ -113,6 +121,7 @@
 				20964EB31C202FCA007CF3DA /* libFlurry_7.3.0.a in Frameworks */,
 				208794CB1C04CF6100C1F206 /* Crashlytics.framework in Frameworks */,
 				208794CA1C04CF6100C1F206 /* Fabric.framework in Frameworks */,
+				1FBE894A9557811E44AC9100 /* libPods-TORA-NET.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF1295D49BE601ADBE5E8DD /* libPods-TORA-NET-TORA-NETTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +144,17 @@
 				20964EB21C202FCA007CF3DA /* libFlurry_7.3.0.a */,
 			);
 			path = Flurry;
+			sourceTree = "<group>";
+		};
+		3470B7DCE99E5F3922457313 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F972392AA60379A4BBDA957 /* Pods-TORA-NET.debug.xcconfig */,
+				081BE28D70C67B337DF13FD5 /* Pods-TORA-NET.release.xcconfig */,
+				0871F02F48E04B445C2FED28 /* Pods-TORA-NET-TORA-NETTests.debug.xcconfig */,
+				A05824253285BCC15B6F24C9 /* Pods-TORA-NET-TORA-NETTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		DD4E54781AEC7716009A88AB /* resource */ = {
@@ -161,6 +182,8 @@
 				DDB192A61AEA745900C0CDCF /* TORA-NET */,
 				DDB192C31AEA745900C0CDCF /* TORA-NET */,
 				DDB192A51AEA745900C0CDCF /* Products */,
+				3470B7DCE99E5F3922457313 /* Pods */,
+				EEDDC2F507447D495EEC712D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,6 +269,15 @@
 			name = Freakworks;
 			sourceTree = "<group>";
 		};
+		EEDDC2F507447D495EEC712D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				117390E9C648849469F91605 /* libPods-TORA-NET.a */,
+				90C1DEF78552D3794EE79AF6 /* libPods-TORA-NET-TORA-NETTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,10 +285,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDB192CA1AEA745900C0CDCF /* Build configuration list for PBXNativeTarget "TORA-NET" */;
 			buildPhases = (
+				9C1BC9F7A5B6C7EB193694F6 /* [CP] Check Pods Manifest.lock */,
 				DDB192A01AEA745900C0CDCF /* Sources */,
 				DDB192A11AEA745900C0CDCF /* Frameworks */,
 				DDB192A21AEA745900C0CDCF /* Resources */,
 				208794C71C04CEED00C1F206 /* ShellScript */,
+				4A41FDE1BE6C68860A4B70A7 /* [CP] Embed Pods Frameworks */,
+				F41057A1322407072BF0A5E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,9 +306,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDB192CD1AEA745900C0CDCF /* Build configuration list for PBXNativeTarget "TORA-NETTests" */;
 			buildPhases = (
+				1ED312BFBAA1DE897D04F8CE /* [CP] Check Pods Manifest.lock */,
 				DDB192BC1AEA745900C0CDCF /* Sources */,
 				DDB192BD1AEA745900C0CDCF /* Frameworks */,
 				DDB192BE1AEA745900C0CDCF /* Resources */,
+				54612C077CD930AE3F5EEA17 /* [CP] Embed Pods Frameworks */,
+				801F4E105D2235B5FF6DC31F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,6 +335,7 @@
 					DDB192A31AEA745900C0CDCF = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = WQ6E4DAU7T;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -367,6 +406,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1ED312BFBAA1DE897D04F8CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		208794C71C04CEED00C1F206 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,6 +433,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run a00e30dc8e843fe7268f540d8962cc0790012e3f 11acd792fee707cdbd4520b6b3da01b1b486b4860379694a6297ca594a611aae";
+		};
+		4A41FDE1BE6C68860A4B70A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TORA-NET/Pods-TORA-NET-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54612C077CD930AE3F5EEA17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TORA-NET-TORA-NETTests/Pods-TORA-NET-TORA-NETTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		801F4E105D2235B5FF6DC31F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TORA-NET-TORA-NETTests/Pods-TORA-NET-TORA-NETTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C1BC9F7A5B6C7EB193694F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F41057A1322407072BF0A5E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TORA-NET/Pods-TORA-NET-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -524,19 +653,21 @@
 		};
 		DDB192CB1AEA745900C0CDCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F972392AA60379A4BBDA957 /* Pods-TORA-NET.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_LOADER = "${BUNDLE_LOADER}";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/test-addtabs",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "test-addtabs/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -552,20 +683,22 @@
 		};
 		DDB192CC1AEA745900C0CDCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 081BE28D70C67B337DF13FD5 /* Pods-TORA-NET.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_LOADER = "${BUNDLE_LOADER}";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WQ6E4DAU7T;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/test-addtabs",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "test-addtabs/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -581,15 +714,12 @@
 		};
 		DDB192CE1AEA745900C0CDCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0871F02F48E04B445C2FED28 /* Pods-TORA-NET-TORA-NETTests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -599,27 +729,24 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "TORA-NETTests";
 				PROVISIONING_PROFILE = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-addtabs.app/test-addtabs";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TORA-NET.app/TORA-NET";
 			};
 			name = Debug;
 		};
 		DDB192CF1AEA745900C0CDCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A05824253285BCC15B6F24C9 /* Pods-TORA-NET-TORA-NETTests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "test-addtabsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "TORA-NETTests";
 				PROVISIONING_PROFILE = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-addtabs.app/test-addtabs";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TORA-NET.app/TORA-NET";
 			};
 			name = Release;
 		};
