@@ -70,18 +70,10 @@
             }
         }
         if (!objects) {
-<<<<<<< .merge_file_cwHIuC
             //値をappdelegateに置いてある共有変数にぶち込む
             appDelegate.roomlist = recentTableData;
             // テーブルビューをリロード
             [self.roomtable reloadData];
-
-=======
-            // テーブルビューをリロード
-            [self.roomtable reloadData];
-            //値をappdelegateに置いてある共有変数にぶち込む
-            appDelegate.roomlist = recentTableData;
->>>>>>> .merge_file_XbhHBi
         }else{
             UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"接続失敗" message:@"講義室情報の更新に失敗しました。\n電波の良いところでもう一度お試しください。" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
             [alertView show];
