@@ -20,6 +20,11 @@
 
 @synthesize roomlist;
 
+- (void)viewWillAppear:(BOOL)animated{
+    //データのコピー、各変数へデータを更新させる
+    [self getRecentTabledata];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
