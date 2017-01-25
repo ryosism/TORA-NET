@@ -16,6 +16,7 @@
 		20964EB31C202FCA007CF3DA /* libFlurry_7.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20964EB21C202FCA007CF3DA /* libFlurry_7.3.0.a */; };
 		20964EB51C202FDC007CF3DA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20964EB41C202FDC007CF3DA /* Security.framework */; };
 		209A18431C1FD9DC00BAF03E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209A18421C1FD9DC00BAF03E /* SystemConfiguration.framework */; };
+		209A3EB11E38D25900F1139C /* autoLoginSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 209A3EB01E38D25900F1139C /* autoLoginSetting.m */; };
 		209FDA131BB284E500649937 /* RoomMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209FDA121BB284E500649937 /* RoomMapViewController.m */; };
 		20DA21DE1D9E25ED001C26F9 /* services-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21DD1D9E25ED001C26F9 /* services-32.png */; };
 		20DA21E11D9E262C001C26F9 /* redo-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21DF1D9E262C001C26F9 /* redo-26.png */; };
@@ -67,6 +68,8 @@
 		20964EB21C202FCA007CF3DA /* libFlurry_7.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.3.0.a; sourceTree = "<group>"; };
 		20964EB41C202FDC007CF3DA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		209A18421C1FD9DC00BAF03E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		209A3EAF1E38D25900F1139C /* autoLoginSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoLoginSetting.h; sourceTree = "<group>"; };
+		209A3EB01E38D25900F1139C /* autoLoginSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoLoginSetting.m; sourceTree = "<group>"; };
 		209FDA111BB284E500649937 /* RoomMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomMapViewController.h; sourceTree = "<group>"; };
 		209FDA121BB284E500649937 /* RoomMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomMapViewController.m; sourceTree = "<group>"; };
 		20DA21DD1D9E25ED001C26F9 /* services-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "services-32.png"; path = "test-addtabs/services-32.png"; sourceTree = "<group>"; };
@@ -213,6 +216,8 @@
 				DD4E54691AEBFB21009A88AB /* FifthViewController.h */,
 				DD4E546A1AEBFB21009A88AB /* FifthViewController.m */,
 				DDBB802E1B3E4F0400DAF249 /* Main.storyboard */,
+				209A3EAF1E38D25900F1139C /* autoLoginSetting.h */,
+				209A3EB01E38D25900F1139C /* autoLoginSetting.m */,
 				209FDA111BB284E500649937 /* RoomMapViewController.h */,
 				209FDA121BB284E500649937 /* RoomMapViewController.m */,
 				DD88811B1B3A3AE700445487 /* RoomTableViewController.h */,
@@ -525,6 +530,7 @@
 				DDA557EE1B3A7B3E0044FD6C /* RoomDetailViewController.m in Sources */,
 				DD4E546B1AEBFB21009A88AB /* FifthViewController.m in Sources */,
 				DD4E54711AEBFB88009A88AB /* FourthViewController.m in Sources */,
+				209A3EB11E38D25900F1139C /* autoLoginSetting.m in Sources */,
 				DDB192AA1AEA745900C0CDCF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
