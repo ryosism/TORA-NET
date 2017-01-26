@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIWebView *issues;
 @property (weak, nonatomic) IBOutlet UIWebView *updates;
 @property (weak, nonatomic) IBOutlet UIWebView *opac;
-@property (weak, nonatomic) IBOutlet UIWebView *campain;
 @property (weak, nonatomic) IBOutlet UIWebView *e_hon;
 @property (weak, nonatomic) IBOutlet UIWebView *e_honregister;
 @property (weak, nonatomic) IBOutlet UIWebView *hyouka;

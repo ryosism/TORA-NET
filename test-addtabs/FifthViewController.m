@@ -46,10 +46,6 @@
     NSURLRequest *opacreq = [NSURLRequest requestWithURL:opac];
     [_opac loadRequest: opacreq];
     
-    NSURL        *campain    = [NSURL URLWithString:@"http://cupkentorabomiledevteam.blogspot.jp/2015/10/blog-post.html"];
-    NSURLRequest *campainreq = [NSURLRequest requestWithURL:campain];
-    [_campain loadRequest: campainreq];
-    
     NSURL        *e_hon    = [NSURL URLWithString:@"http://www.e-hon.ne.jp"];
     NSURLRequest *e_honreq = [NSURLRequest requestWithURL:e_hon];
     [_e_hon loadRequest: e_honreq];
@@ -64,7 +60,7 @@
     
     NSURL        *webmail    = [NSURL URLWithString:@"https://tora-net.sti.chubu.ac.jp/deepmail/cgi-bin/mobile/login.cgi"];
     NSURLRequest *webmailreq = [NSURLRequest requestWithURL:webmail];
-[_webmail loadRequest: webmailreq];
+    [_webmail loadRequest: webmailreq];
     
 }
 
