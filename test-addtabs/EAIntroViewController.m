@@ -56,6 +56,13 @@
 - (void)introDidFinish:(EAIntroView *)introView wasSkipped:(BOOL)wasSkipped {
     if(wasSkipped) {
         NSLog(@"Intro skipped");
+        
+        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];  // 取得
+        [ud setBool:NO forKey:@"KEY_isFirstTime"];
+        [ud synchronize];   //適用
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+
     } else {
         NSLog(@"Intro finished");
         NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];  // 取得
