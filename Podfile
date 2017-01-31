@@ -7,7 +7,7 @@ target 'TORA-NET' do
 
   # Pods for TORA-NET
 	pod 'NCMB', :git => 'https://github.com/NIFTYCloud-mbaas/ncmb_ios.git'
-
+	pod 'EAIntroView', :git => 'https://github.com/ealeksandrov/EAIntroView.git'
   target 'TORA-NETTests' do
   end
 
