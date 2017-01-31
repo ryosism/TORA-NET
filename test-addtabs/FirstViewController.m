@@ -30,6 +30,7 @@
         [NSThread sleepForTimeInterval:0.8];
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"EAIntroView" bundle:[NSBundle mainBundle]];
         UIViewController *initialViewController = [storyboard instantiateInitialViewController];
+        initialViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         [self presentViewController:initialViewController animated:YES completion:nil];
     }
 }
