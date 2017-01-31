@@ -21,9 +21,24 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];  // 取得
+    BOOL isFirstTime = [ud boolForKey:@"KEY_isFirstTime"];
+    NSLog(@"KEY_isFirstTime=%d",isFirstTime);
+    
+    if (isFirstTime) {
+        [NSThread sleepForTimeInterval:0.8];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"EAIntroView" bundle:[NSBundle mainBundle]];
+        UIViewController *initialViewController = [storyboard instantiateInitialViewController];
+        initialViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentViewController:initialViewController animated:YES completion:nil];
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     NSURL        *URLTORATop    = [NSURL URLWithString:@"https://tora-net.sti.chubu.ac.jp/portal/sptop.do?"];
     NSURLRequest *URLTORATopreq = [NSURLRequest requestWithURL:URLTORATop];
     [_toratop loadRequest: URLTORATopreq];
@@ -40,6 +55,7 @@
     NSString *userID = [ud stringForKey:@"KEY_userID"];
     NSString *passwd = [ud stringForKey:@"KEY_passwd"];
     
+    NSLog(@"KEY_enableLogin = %d",b);
     if (b) {
         // テキストフィールドに入力するJSを実行する
         NSString *putUserID = [NSString stringWithFormat:@"jQuery('#userId').val('%@');",userID];
@@ -58,7 +74,5 @@
 {
     [super didReceiveMemoryWarning];
 }
-
-- (IBAction)goback:(UIStoryboardSegue *)segue {}
 
 @end

@@ -41,6 +41,7 @@
     [defaults setObject:@"NO" forKey:@"KEY_enableSwitch"];
     [defaults setObject:@"" forKey:@"KEY_userID"];
     [defaults setObject:@"" forKey:@"KEY_passwd"];
+    [defaults setObject:@"YES" forKey:@"KEY_isFirstTime"];
     [ud registerDefaults:defaults];
     
     return YES;
