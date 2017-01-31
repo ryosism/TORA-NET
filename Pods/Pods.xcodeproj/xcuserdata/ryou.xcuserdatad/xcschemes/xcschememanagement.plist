@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>EAIntroView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>EARestrictedScrollView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>NCMB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03BF85FC5497DD4DE6D53FF58FE9FB65</key>
+		<key>15771CDB60DFAA769E27961D321E12C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3F7DF7EAC692DB326EF4C3B7E2E6ABF0</key>
+		<key>2C2919D195B1274B4A1AB749E443E6E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A0C9C91439160F1CA751EF6CA0D9FCDD</key>
+		<key>2DC0531BE43121946EFBB7D7D8DF1F8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD88FAAC1DD1F54608C29E0C39B1F74E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E079843C9C79118289CFD9619070B0B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

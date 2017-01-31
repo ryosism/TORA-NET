@@ -1,0 +1,1 @@
+../../../NCMB/NCMB/PrivateHeaders/NCMBUser+Private 2.h

@@ -22,8 +22,10 @@
     NSString *passwd = [ud stringForKey:@"KEY_passwd"];
     
     if (b) {
+        NSLog(@"b = %d",b);
         self.enableSwitch.on = YES;
     }else{
+        NSLog(@"b = %d",b);
         self.enableSwitch.on = NO;
     }
     
@@ -51,7 +53,6 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];  // 取得
     [ud setObject:self.userID.text forKey:@"KEY_userID"];
     [ud setObject:self.passwd.text forKey:@"KEY_passwd"];
-    [ud setBool:YES forKey:@"KEY_enableSwitch"];
     
     [ud synchronize];   //適用
 
@@ -60,7 +61,6 @@
     
     UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"保存完了！" message:@"ログイン情報を保存しました。" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
     
-    self.enableSwitch.on = YES;
     [self.userID resignFirstResponder];
     [self.passwd resignFirstResponder];
     [alertView show];
@@ -71,8 +71,10 @@
     
     if (self.enableSwitch.on == YES) {
         [ud setBool:YES forKey:@"KEY_enableSwitch"];
+        NSLog(@"ON");
     }else{
         [ud setBool:NO forKey:@"KEY_enableSwitch"];
+        NSLog(@"OFF");
     }
     
     [ud synchronize];   //適用
