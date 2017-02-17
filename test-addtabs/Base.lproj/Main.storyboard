@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -149,8 +149,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="weh-kB-GPk">
-                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2b-b0-Asc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pfG-8E-bjJ" id="ITF-Zo-Ucc"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weh-kB-GPk">
+                                <rect key="frame" x="0.0" y="643" width="414" height="44"/>
                                 <items>
                                     <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="dMU-cr-PNH"/>
                                     <barButtonItem image="undo-26.png" id="Ix0-x8-Pkf">
@@ -178,13 +185,6 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f2b-b0-Asc">
-                                <rect key="frame" x="0.0" y="64" width="600" height="443"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="pfG-8E-bjJ" id="ITF-Zo-Ucc"/>
-                                </connections>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -192,7 +192,7 @@
                             <constraint firstItem="f2b-b0-Asc" firstAttribute="leading" secondItem="oyM-nQ-Nlo" secondAttribute="leading" id="Xoh-Mf-4Jc"/>
                             <constraint firstAttribute="trailing" secondItem="f2b-b0-Asc" secondAttribute="trailing" id="e9q-CT-rmA"/>
                             <constraint firstItem="weh-kB-GPk" firstAttribute="leading" secondItem="f2b-b0-Asc" secondAttribute="leading" id="iFt-O5-Xd3"/>
-                            <constraint firstItem="f2b-b0-Asc" firstAttribute="top" secondItem="Ayi-jz-koi" secondAttribute="bottom" id="ibO-a6-MkB"/>
+                            <constraint firstItem="f2b-b0-Asc" firstAttribute="top" secondItem="Ayi-jz-koi" secondAttribute="bottom" constant="-64" id="ibO-a6-MkB"/>
                             <constraint firstItem="weh-kB-GPk" firstAttribute="bottom" secondItem="uvy-6i-mYA" secondAttribute="top" id="izT-Lq-E9n"/>
                             <constraint firstItem="weh-kB-GPk" firstAttribute="top" secondItem="f2b-b0-Asc" secondAttribute="bottom" id="mPS-Fi-yhv"/>
                         </constraints>
@@ -221,8 +221,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7v7-6d-EVV">
-                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d18-uC-7hZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Rtt-8Z-8dt" id="NCX-if-1Fv"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7v7-6d-EVV">
+                                <rect key="frame" x="0.0" y="643" width="414" height="44"/>
                                 <items>
                                     <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="TLG-wS-iH7"/>
                                     <barButtonItem image="undo-26.png" id="IER-tP-DNp">
@@ -250,13 +257,6 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d18-uC-7hZ">
-                                <rect key="frame" x="0.0" y="64" width="600" height="443"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="Rtt-8Z-8dt" id="NCX-if-1Fv"/>
-                                </connections>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -264,7 +264,7 @@
                             <constraint firstItem="7v7-6d-EVV" firstAttribute="top" secondItem="d18-uC-7hZ" secondAttribute="bottom" id="ETz-EQ-X85"/>
                             <constraint firstItem="7v7-6d-EVV" firstAttribute="leading" secondItem="wHd-gF-BFc" secondAttribute="leading" id="OHc-aX-ogI"/>
                             <constraint firstAttribute="trailing" secondItem="d18-uC-7hZ" secondAttribute="trailing" id="PLh-5s-UlO"/>
-                            <constraint firstItem="d18-uC-7hZ" firstAttribute="top" secondItem="nTQ-mH-E0N" secondAttribute="bottom" id="Te6-Kx-XeH"/>
+                            <constraint firstItem="d18-uC-7hZ" firstAttribute="top" secondItem="nTQ-mH-E0N" secondAttribute="bottom" constant="-64" id="Te6-Kx-XeH"/>
                             <constraint firstItem="d18-uC-7hZ" firstAttribute="leading" secondItem="7v7-6d-EVV" secondAttribute="leading" id="bbc-5x-0gr"/>
                             <constraint firstItem="7v7-6d-EVV" firstAttribute="bottom" secondItem="dwe-xS-YGx" secondAttribute="top" id="sYa-7d-Oes"/>
                         </constraints>
@@ -377,8 +377,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zcG-xc-wuo">
-                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DcC-ab-45r">
+                                <rect key="frame" x="0.0" y="64" width="414" height="571"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zxv-OU-R0d" id="9k1-Kt-Qrs"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcG-xc-wuo">
+                                <rect key="frame" x="0.0" y="635" width="414" height="44"/>
                                 <items>
                                     <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="xVh-SZ-J78"/>
                                     <barButtonItem image="undo-26.png" id="aBK-bS-FQO">
@@ -406,13 +413,6 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DcC-ab-45r">
-                                <rect key="frame" x="0.0" y="64" width="600" height="443"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="zxv-OU-R0d" id="9k1-Kt-Qrs"/>
-                                </connections>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -421,7 +421,7 @@
                             <constraint firstItem="zcG-xc-wuo" firstAttribute="trailing" secondItem="DcC-ab-45r" secondAttribute="trailing" id="Kca-ZN-o7c"/>
                             <constraint firstItem="zcG-xc-wuo" firstAttribute="leading" secondItem="vpL-cH-obM" secondAttribute="leading" id="UVq-ox-LxK"/>
                             <constraint firstItem="DcC-ab-45r" firstAttribute="leading" secondItem="zcG-xc-wuo" secondAttribute="leading" id="ayR-CT-1kK"/>
-                            <constraint firstItem="zcG-xc-wuo" firstAttribute="bottom" secondItem="gZf-iH-oG1" secondAttribute="top" id="kJC-gO-awz"/>
+                            <constraint firstItem="zcG-xc-wuo" firstAttribute="bottom" secondItem="gZf-iH-oG1" secondAttribute="top" constant="-8" id="kJC-gO-awz"/>
                             <constraint firstItem="DcC-ab-45r" firstAttribute="top" secondItem="kc5-iZ-TxG" secondAttribute="bottom" id="kjC-a0-Yba"/>
                         </constraints>
                     </view>
@@ -436,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68d-4x-v0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="402" y="1093"/>
+            <point key="canvasLocation" x="401.44927536231887" y="1092.3913043478262"/>
         </scene>
         <!--設定-->
         <scene sceneID="avw-fb-9oM">
@@ -786,15 +786,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iOT-rh-Tb6">
-                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOT-rh-Tb6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="648"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="ZHg-JF-HdR" id="Leg-tM-qNg"/>
                                 </connections>
                             </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="03u-fa-JIj">
-                                <rect key="frame" x="0.0" y="512" width="600" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03u-fa-JIj">
+                                <rect key="frame" x="0.0" y="648" width="414" height="44"/>
                                 <items>
                                     <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="0vI-UB-OOW"/>
                                     <barButtonItem image="undo-26.png" id="qGX-MR-iXn">
@@ -825,13 +825,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="03u-fa-JIj" secondAttribute="trailing" id="2lT-Oo-FE2"/>
-                            <constraint firstItem="03u-fa-JIj" firstAttribute="leading" secondItem="iOT-rh-Tb6" secondAttribute="leading" id="Bvm-mf-ln3"/>
-                            <constraint firstItem="03u-fa-JIj" firstAttribute="leading" secondItem="esi-2N-7Pv" secondAttribute="leading" id="Kwp-XL-zuc"/>
-                            <constraint firstItem="iOT-rh-Tb6" firstAttribute="bottom" secondItem="knp-dO-qsc" secondAttribute="top" id="OCj-LB-IdQ"/>
-                            <constraint firstItem="iOT-rh-Tb6" firstAttribute="trailing" secondItem="03u-fa-JIj" secondAttribute="trailing" id="bQt-GN-Omx"/>
-                            <constraint firstItem="iOT-rh-Tb6" firstAttribute="top" secondItem="Z1M-lt-BBf" secondAttribute="bottom" id="sje-eW-xxf"/>
-                            <constraint firstItem="03u-fa-JIj" firstAttribute="bottom" secondItem="knp-dO-qsc" secondAttribute="top" id="tRY-Kj-4Ld"/>
+                            <constraint firstItem="iOT-rh-Tb6" firstAttribute="leading" secondItem="esi-2N-7Pv" secondAttribute="leading" id="3g3-sk-2pz"/>
+                            <constraint firstItem="03u-fa-JIj" firstAttribute="top" secondItem="iOT-rh-Tb6" secondAttribute="bottom" id="Dae-YD-MCr"/>
+                            <constraint firstItem="iOT-rh-Tb6" firstAttribute="trailing" secondItem="03u-fa-JIj" secondAttribute="trailing" id="iwD-Bf-j4l"/>
+                            <constraint firstItem="iOT-rh-Tb6" firstAttribute="leading" secondItem="03u-fa-JIj" secondAttribute="leading" id="n2E-sA-nSc"/>
+                            <constraint firstItem="iOT-rh-Tb6" firstAttribute="top" secondItem="esi-2N-7Pv" secondAttribute="top" id="pmY-s2-mZK"/>
+                            <constraint firstItem="03u-fa-JIj" firstAttribute="bottom" secondItem="knp-dO-qsc" secondAttribute="top" id="rVu-Ep-10C"/>
+                            <constraint firstAttribute="trailing" secondItem="iOT-rh-Tb6" secondAttribute="trailing" id="yeE-f8-mKI"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -843,7 +843,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p5y-TX-bs6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1276" y="1684"/>
+            <point key="canvasLocation" x="1275.3623188405797" y="1683.4239130434785"/>
         </scene>
         <!--学生による授業評価-->
         <scene sceneID="yLa-86-m7m">
@@ -857,15 +857,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyE-Cm-7Op">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oyE-Cm-7Op">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="x1N-UP-zrr" id="JSA-v0-m7R"/>
                                 </connections>
                             </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tcx-2f-nz5">
-                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcx-2f-nz5">
+                                <rect key="frame" x="0.0" y="643" width="414" height="44"/>
                                 <items>
                                     <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="qpR-5i-Q17"/>
                                     <barButtonItem image="undo-26.png" id="tFk-U3-Yab">
@@ -897,11 +897,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oyE-Cm-7Op" firstAttribute="trailing" secondItem="Tcx-2f-nz5" secondAttribute="trailing" id="04s-d9-5YH"/>
-                            <constraint firstItem="oyE-Cm-7Op" firstAttribute="top" secondItem="C5N-4Y-ojc" secondAttribute="bottom" id="Mcv-Dc-9M4"/>
+                            <constraint firstItem="oyE-Cm-7Op" firstAttribute="top" secondItem="C5N-4Y-ojc" secondAttribute="bottom" constant="-64" id="Mcv-Dc-9M4"/>
                             <constraint firstItem="oyE-Cm-7Op" firstAttribute="leading" secondItem="Tcx-2f-nz5" secondAttribute="leading" id="X3m-QR-25B"/>
                             <constraint firstAttribute="trailing" secondItem="Tcx-2f-nz5" secondAttribute="trailing" id="YAv-hT-rh7"/>
                             <constraint firstItem="Tcx-2f-nz5" firstAttribute="leading" secondItem="kKl-GH-y1B" secondAttribute="leading" id="bBh-rk-OaY"/>
-                            <constraint firstItem="oyE-Cm-7Op" firstAttribute="bottom" secondItem="HTU-KU-9ge" secondAttribute="top" id="cN3-KT-oav"/>
+                            <constraint firstItem="oyE-Cm-7Op" firstAttribute="bottom" secondItem="HTU-KU-9ge" secondAttribute="top" constant="-44" id="cN3-KT-oav"/>
                             <constraint firstItem="Tcx-2f-nz5" firstAttribute="bottom" secondItem="HTU-KU-9ge" secondAttribute="top" id="jao-Vt-KGe"/>
                         </constraints>
                     </view>
@@ -912,7 +912,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXo-wj-JXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1902" y="1685"/>
+            <point key="canvasLocation" x="1901.449275362319" y="1684.2391304347827"/>
         </scene>
         <!--e-hon 丸善中部大学店-->
         <scene sceneID="CBa-dX-Qhv">
@@ -926,15 +926,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FTi-IW-dPt">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTi-IW-dPt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="Ywi-yS-PIk" id="2qx-JP-tHp"/>
                                 </connections>
                             </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfZ-tp-Vvt">
-                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfZ-tp-Vvt">
+                                <rect key="frame" x="0.0" y="643" width="414" height="44"/>
                                 <items>
                                     <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="eVE-Ur-hjV"/>
                                     <barButtonItem image="undo-26.png" id="h5U-X0-YxT">
@@ -969,8 +969,8 @@
                             <constraint firstItem="kfZ-tp-Vvt" firstAttribute="trailing" secondItem="FTi-IW-dPt" secondAttribute="trailing" id="UEE-M7-ssu"/>
                             <constraint firstItem="kfZ-tp-Vvt" firstAttribute="leading" secondItem="FTi-IW-dPt" secondAttribute="leading" id="YPB-7D-LJi"/>
                             <constraint firstItem="kfZ-tp-Vvt" firstAttribute="bottom" secondItem="9gZ-5D-KiX" secondAttribute="top" id="ekD-gP-SII"/>
-                            <constraint firstItem="FTi-IW-dPt" firstAttribute="top" secondItem="jjl-Q9-b35" secondAttribute="bottom" id="gyr-Xg-WqM"/>
-                            <constraint firstItem="FTi-IW-dPt" firstAttribute="bottom" secondItem="9gZ-5D-KiX" secondAttribute="top" id="pIz-Dx-cup"/>
+                            <constraint firstItem="FTi-IW-dPt" firstAttribute="top" secondItem="jjl-Q9-b35" secondAttribute="bottom" constant="-64" id="gyr-Xg-WqM"/>
+                            <constraint firstItem="FTi-IW-dPt" firstAttribute="bottom" secondItem="9gZ-5D-KiX" secondAttribute="top" constant="-44" id="pIz-Dx-cup"/>
                             <constraint firstAttribute="trailing" secondItem="FTi-IW-dPt" secondAttribute="trailing" id="qBe-OA-Lmn"/>
                         </constraints>
                     </view>
@@ -981,7 +981,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dk-I0-qfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2527" y="1684"/>
+            <point key="canvasLocation" x="2526.0869565217395" y="1683.4239130434785"/>
         </scene>
         <!--Webメール-->
         <scene sceneID="FJF-1N-2Ix">
@@ -995,12 +995,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BmV-Qv-6d8">
-                                <rect key="frame" x="0.0" y="64" width="600" height="448"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BmV-Qv-6d8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r6T-bF-cP8">
-                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6T-bF-cP8">
+                                <rect key="frame" x="0.0" y="643" width="414" height="44"/>
                                 <items>
                                     <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="WOM-gb-iyE"/>
                                     <barButtonItem image="undo-26.png" id="aZE-lJ-lyf">
@@ -1032,8 +1032,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="r6T-bF-cP8" firstAttribute="bottom" secondItem="w9C-h3-uNM" secondAttribute="top" id="L9b-Eh-f1V"/>
-                            <constraint firstItem="w9C-h3-uNM" firstAttribute="top" secondItem="BmV-Qv-6d8" secondAttribute="bottom" constant="39" id="PRv-m1-t7e"/>
-                            <constraint firstItem="BmV-Qv-6d8" firstAttribute="top" secondItem="qHX-ws-Nsd" secondAttribute="bottom" id="QzX-6Y-Qq5"/>
+                            <constraint firstItem="w9C-h3-uNM" firstAttribute="top" secondItem="BmV-Qv-6d8" secondAttribute="bottom" constant="44" id="PRv-m1-t7e"/>
+                            <constraint firstItem="BmV-Qv-6d8" firstAttribute="top" secondItem="qHX-ws-Nsd" secondAttribute="bottom" constant="-64" id="QzX-6Y-Qq5"/>
                             <constraint firstItem="r6T-bF-cP8" firstAttribute="trailing" secondItem="BmV-Qv-6d8" secondAttribute="trailing" id="WvO-40-oYP"/>
                             <constraint firstItem="BmV-Qv-6d8" firstAttribute="centerX" secondItem="3BY-yI-Gfm" secondAttribute="centerX" id="els-n8-Dc7"/>
                             <constraint firstItem="r6T-bF-cP8" firstAttribute="leading" secondItem="BmV-Qv-6d8" secondAttribute="leading" id="oZR-Al-rGh"/>
@@ -1051,7 +1051,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVD-NI-wpt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4433" y="1685"/>
+            <point key="canvasLocation" x="4431.884057971015" y="1684.2391304347827"/>
         </scene>
         <!--既存の問題-->
         <scene sceneID="cXb-t4-Klu">
@@ -1065,8 +1065,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t6G-w4-dfH">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t6G-w4-dfH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="VXt-cy-sY1" id="0pk-p9-NyC"/>
@@ -1075,7 +1075,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="t6G-w4-dfH" firstAttribute="top" secondItem="RvQ-kU-Mai" secondAttribute="bottom" id="Eh9-XX-2tz"/>
+                            <constraint firstItem="t6G-w4-dfH" firstAttribute="top" secondItem="RvQ-kU-Mai" secondAttribute="bottom" constant="-64" id="Eh9-XX-2tz"/>
                             <constraint firstAttribute="trailing" secondItem="t6G-w4-dfH" secondAttribute="trailing" id="bFl-9U-q6R"/>
                             <constraint firstItem="t6G-w4-dfH" firstAttribute="leading" secondItem="Whb-yK-WLr" secondAttribute="leading" id="jkb-hZ-49x"/>
                             <constraint firstItem="t6G-w4-dfH" firstAttribute="bottom" secondItem="DeN-2X-lv8" secondAttribute="top" id="pLg-Jn-3XS"/>
@@ -1092,7 +1092,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTK-ew-GbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3151" y="1685"/>
+            <point key="canvasLocation" x="3150.7246376811595" y="1684.2391304347827"/>
         </scene>
         <!--更新履歴-->
         <scene sceneID="fcs-MD-G1n">
@@ -1106,8 +1106,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLI-hG-0UI">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLI-hG-0UI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="Ak3-uu-dwF" id="G8G-Mc-un8"/>
@@ -1117,7 +1117,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="lLI-hG-0UI" secondAttribute="trailing" id="0EV-Ta-Kcp"/>
-                            <constraint firstItem="lLI-hG-0UI" firstAttribute="top" secondItem="dUa-ex-BMk" secondAttribute="bottom" id="A9y-wb-BuV"/>
+                            <constraint firstItem="lLI-hG-0UI" firstAttribute="top" secondItem="dUa-ex-BMk" secondAttribute="bottom" constant="-64" id="A9y-wb-BuV"/>
                             <constraint firstItem="lLI-hG-0UI" firstAttribute="leading" secondItem="dcv-aj-GME" secondAttribute="leading" id="Z9i-G2-zo4"/>
                             <constraint firstItem="lLI-hG-0UI" firstAttribute="bottom" secondItem="ELZ-Ny-Nyt" secondAttribute="top" id="uYA-LC-0gr"/>
                         </constraints>
@@ -1133,7 +1133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1J1-vf-vdM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3783" y="1685"/>
+            <point key="canvasLocation" x="3782.608695652174" y="1684.2391304347827"/>
         </scene>
         <!--Fifth View Controller-->
         <scene sceneID="tx9-Xu-OFp">
@@ -1147,11 +1147,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PKE-Vw-KXF">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PKE-Vw-KXF">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                             </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zeM-MW-F2C">
-                                <rect key="frame" x="0.0" y="512" width="600" height="44"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHk-Tb-2xY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="648"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="t8r-kD-Cba" id="S5a-QM-Hym"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeM-MW-F2C">
+                                <rect key="frame" x="3" y="648" width="411" height="44"/>
                                 <items>
                                     <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="fZc-zn-MOR"/>
                                     <barButtonItem image="undo-26.png" id="awD-Of-oOz">
@@ -1179,25 +1186,18 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yHk-Tb-2xY">
-                                <rect key="frame" x="0.0" y="64" width="606" height="448"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="t8r-kD-Cba" id="S5a-QM-Hym"/>
-                                </connections>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yHk-Tb-2xY" firstAttribute="leading" secondItem="PKE-Vw-KXF" secondAttribute="leading" id="97R-uk-o6S"/>
                             <constraint firstItem="zeM-MW-F2C" firstAttribute="top" secondItem="yHk-Tb-2xY" secondAttribute="bottom" id="H3K-my-3HW"/>
-                            <constraint firstItem="yHk-Tb-2xY" firstAttribute="top" secondItem="PKE-Vw-KXF" secondAttribute="bottom" id="Itd-V7-Gqd"/>
-                            <constraint firstItem="yHk-Tb-2xY" firstAttribute="top" secondItem="y07-9Z-V4W" secondAttribute="bottom" id="KOu-Yk-l89"/>
+                            <constraint firstItem="yHk-Tb-2xY" firstAttribute="top" secondItem="PKE-Vw-KXF" secondAttribute="bottom" constant="-64" id="Itd-V7-Gqd"/>
+                            <constraint firstItem="yHk-Tb-2xY" firstAttribute="top" secondItem="y07-9Z-V4W" secondAttribute="bottom" constant="-64" id="KOu-Yk-l89"/>
                             <constraint firstItem="zeM-MW-F2C" firstAttribute="bottom" secondItem="h0n-Dx-69O" secondAttribute="top" id="Rt2-cW-h7U"/>
-                            <constraint firstItem="yHk-Tb-2xY" firstAttribute="leading" secondItem="zeM-MW-F2C" secondAttribute="leading" id="X20-Ti-rw6"/>
+                            <constraint firstItem="yHk-Tb-2xY" firstAttribute="leading" secondItem="zeM-MW-F2C" secondAttribute="leading" constant="-3" id="X20-Ti-rw6"/>
                             <constraint firstAttribute="trailing" secondItem="zeM-MW-F2C" secondAttribute="trailing" id="XEL-tQ-Ihx"/>
-                            <constraint firstItem="PKE-Vw-KXF" firstAttribute="trailing" secondItem="zeM-MW-F2C" secondAttribute="trailing" id="qMd-Kw-LzU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yHk-Tb-2xY" secondAttribute="trailing" constant="-26" id="tPd-ns-C1d"/>
+                            <constraint firstItem="PKE-Vw-KXF" firstAttribute="trailing" secondItem="zeM-MW-F2C" secondAttribute="trailing" constant="186" id="qMd-Kw-LzU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yHk-Tb-2xY" secondAttribute="trailing" constant="-20" id="tPd-ns-C1d"/>
                             <constraint firstItem="yHk-Tb-2xY" firstAttribute="leading" secondItem="OgQ-wk-el4" secondAttribute="leading" id="tZX-li-qF8"/>
                         </constraints>
                     </view>
@@ -1225,13 +1225,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="使用したアイコンの一部は以下のサイトの物です。 Some icons used in this app are brought from this website:" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cix-VZ-Xkg">
-                                <rect key="frame" x="16" y="82" width="564" height="111"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用したアイコンの一部は以下のサイトの物です。 Some icons used in this app are brought from this website:" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cix-VZ-Xkg">
+                                <rect key="frame" x="16" y="82" width="378" height="111"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXT-Ko-22K">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXT-Ko-22K">
                                 <rect key="frame" x="0.0" y="209" width="600" height="44"/>
                                 <color key="backgroundColor" red="0.94346219301223755" green="0.94346219301223755" blue="0.94346219301223755" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1252,7 +1252,7 @@
                             <constraint firstItem="cix-VZ-Xkg" firstAttribute="top" secondItem="pnQ-0P-kOB" secondAttribute="bottom" constant="18" id="IHG-n1-MSm"/>
                             <constraint firstItem="cix-VZ-Xkg" firstAttribute="trailing" secondItem="gFJ-wC-2MD" secondAttribute="trailingMargin" id="NxJ-Q4-Zdl"/>
                             <constraint firstItem="cix-VZ-Xkg" firstAttribute="leading" secondItem="gFJ-wC-2MD" secondAttribute="leadingMargin" constant="-4" id="VjM-8P-HYL"/>
-                            <constraint firstItem="HjG-3T-meD" firstAttribute="top" secondItem="GXT-Ko-22K" secondAttribute="bottom" constant="298" id="Z2X-ve-j9j"/>
+                            <constraint firstItem="HjG-3T-meD" firstAttribute="top" secondItem="GXT-Ko-22K" secondAttribute="bottom" constant="434" id="Z2X-ve-j9j"/>
                             <constraint firstItem="GXT-Ko-22K" firstAttribute="leading" secondItem="gFJ-wC-2MD" secondAttribute="leading" id="eXM-cH-Xus"/>
                             <constraint firstItem="GXT-Ko-22K" firstAttribute="top" secondItem="cix-VZ-Xkg" secondAttribute="bottom" constant="16" id="gQH-KJ-xMl"/>
                         </constraints>
@@ -1277,8 +1277,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Di-ay-Mt0">
-                                <rect key="frame" x="0.0" y="512" width="600" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Di-ay-Mt0">
+                                <rect key="frame" x="0.0" y="648" width="414" height="44"/>
                                 <items>
                                     <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="S4B-DF-SLA"/>
                                     <barButtonItem image="undo-26.png" id="INO-MY-EIr">
@@ -1306,11 +1306,11 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="69W-ai-uMm">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69W-ai-uMm">
                                 <rect key="frame" x="8" y="72" width="584" height="296"/>
                                 <subviews>
-                                    <webView contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OHT-mJ-uWC">
-                                        <rect key="frame" x="0.0" y="0.0" width="584" height="296"/>
+                                    <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OHT-mJ-uWC">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="296"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="delegate" destination="haA-69-NAb" id="oSL-Pu-4kf"/>
@@ -1318,22 +1318,16 @@
                                     </webView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="OHT-mJ-uWC" secondAttribute="trailing" id="2Pt-su-NSY"/>
+                                    <constraint firstAttribute="trailing" secondItem="OHT-mJ-uWC" secondAttribute="trailing" constant="186" id="2Pt-su-NSY"/>
                                     <constraint firstItem="OHT-mJ-uWC" firstAttribute="leading" secondItem="69W-ai-uMm" secondAttribute="leading" id="7v3-su-fFl"/>
                                     <constraint firstItem="OHT-mJ-uWC" firstAttribute="top" secondItem="69W-ai-uMm" secondAttribute="top" id="CYh-mK-UPj"/>
-                                    <constraint firstItem="OHT-mJ-uWC" firstAttribute="centerX" secondItem="69W-ai-uMm" secondAttribute="centerX" id="EME-wV-s3N"/>
+                                    <constraint firstItem="OHT-mJ-uWC" firstAttribute="centerX" secondItem="69W-ai-uMm" secondAttribute="centerX" constant="-93" id="EME-wV-s3N"/>
                                     <constraint firstAttribute="bottom" secondItem="OHT-mJ-uWC" secondAttribute="bottom" id="mJ1-rh-ntQ"/>
                                     <constraint firstItem="OHT-mJ-uWC" firstAttribute="centerY" secondItem="69W-ai-uMm" secondAttribute="centerY" id="zSw-IW-7qN"/>
                                 </constraints>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="※画像が正しく表示されない場合は更新ボタンを押すと改善されます" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg9-AO-fl2">
-                                <rect key="frame" x="8" y="413" width="584" height="39"/>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2L-57-i7c">
-                                <rect key="frame" x="0.0" y="452" width="615" height="60"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2L-57-i7c">
+                                <rect key="frame" x="0.0" y="588" width="414" height="60"/>
                                 <color key="backgroundColor" red="0.69778297153489899" green="0.97455797700000002" blue="0.97139168068186832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="u7D-Kg-zdo"/>
@@ -1346,8 +1340,14 @@
                                     <segue destination="mEz-LW-XYF" kind="push" id="Aej-bw-k5e"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRf-sk-yKi">
-                                <rect key="frame" x="8" y="376" width="584" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※画像が正しく表示されない場合は更新ボタンを押すと改善されます" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg9-AO-fl2">
+                                <rect key="frame" x="8" y="535" width="398" height="39"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRf-sk-yKi">
+                                <rect key="frame" x="8" y="498" width="398" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="eMa-0h-5Yf"/>
                                 </constraints>
@@ -1363,17 +1363,17 @@
                             <constraint firstItem="69W-ai-uMm" firstAttribute="top" secondItem="RwB-ah-3Vx" secondAttribute="bottom" constant="8" symbolic="YES" id="Ags-zA-rUQ"/>
                             <constraint firstItem="Kg9-AO-fl2" firstAttribute="centerX" secondItem="7Di-ay-Mt0" secondAttribute="centerX" id="Fm5-MK-2cf"/>
                             <constraint firstItem="B2L-57-i7c" firstAttribute="leading" secondItem="E5J-SA-c3r" secondAttribute="leading" id="GEQ-aU-cAV"/>
-                            <constraint firstItem="MRf-sk-yKi" firstAttribute="top" secondItem="69W-ai-uMm" secondAttribute="bottom" constant="8" symbolic="YES" id="KKG-MP-awh"/>
+                            <constraint firstItem="MRf-sk-yKi" firstAttribute="top" secondItem="69W-ai-uMm" secondAttribute="bottom" constant="130" id="KKG-MP-awh"/>
                             <constraint firstAttribute="trailing" secondItem="7Di-ay-Mt0" secondAttribute="trailing" id="LVF-dm-xGb"/>
                             <constraint firstItem="69W-ai-uMm" firstAttribute="leading" secondItem="MRf-sk-yKi" secondAttribute="leading" id="YHG-Pi-lUX"/>
-                            <constraint firstItem="B2L-57-i7c" firstAttribute="top" secondItem="Kg9-AO-fl2" secondAttribute="bottom" id="beT-hA-7W3"/>
+                            <constraint firstItem="B2L-57-i7c" firstAttribute="top" secondItem="Kg9-AO-fl2" secondAttribute="bottom" constant="14" id="beT-hA-7W3"/>
                             <constraint firstItem="7Di-ay-Mt0" firstAttribute="bottom" secondItem="t97-Ob-zuk" secondAttribute="top" id="biy-26-2Rc"/>
                             <constraint firstItem="7Di-ay-Mt0" firstAttribute="top" secondItem="B2L-57-i7c" secondAttribute="bottom" id="hod-pN-7dD"/>
-                            <constraint firstItem="Kg9-AO-fl2" firstAttribute="top" secondItem="69W-ai-uMm" secondAttribute="bottom" constant="45" id="kRi-dP-CnI"/>
-                            <constraint firstItem="69W-ai-uMm" firstAttribute="trailing" secondItem="MRf-sk-yKi" secondAttribute="trailing" id="our-jw-Tcv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="B2L-57-i7c" secondAttribute="trailing" constant="-35" id="syW-ma-Fhg"/>
+                            <constraint firstItem="Kg9-AO-fl2" firstAttribute="top" secondItem="69W-ai-uMm" secondAttribute="bottom" constant="167" id="kRi-dP-CnI"/>
+                            <constraint firstItem="69W-ai-uMm" firstAttribute="trailing" secondItem="MRf-sk-yKi" secondAttribute="trailing" constant="186" id="our-jw-Tcv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B2L-57-i7c" secondAttribute="trailing" constant="-20" id="syW-ma-Fhg"/>
                             <constraint firstItem="MRf-sk-yKi" firstAttribute="trailing" secondItem="Kg9-AO-fl2" secondAttribute="trailing" id="uv8-6C-w5d"/>
-                            <constraint firstItem="B2L-57-i7c" firstAttribute="top" secondItem="MRf-sk-yKi" secondAttribute="bottom" constant="38" id="wfh-gC-bLy"/>
+                            <constraint firstItem="B2L-57-i7c" firstAttribute="top" secondItem="MRf-sk-yKi" secondAttribute="bottom" constant="52" id="wfh-gC-bLy"/>
                             <constraint firstItem="69W-ai-uMm" firstAttribute="leading" secondItem="E5J-SA-c3r" secondAttribute="leadingMargin" constant="-12" id="zdL-xm-4SA"/>
                         </constraints>
                     </view>
@@ -1390,7 +1390,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Svt-rx-nHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1681" y="1943"/>
+            <point key="canvasLocation" x="-1681.1594202898552" y="1942.663043478261"/>
         </scene>
         <!--Room Map View Controller-->
         <scene sceneID="y9h-0d-Btw">
@@ -1404,14 +1404,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="03l-gk-EwS">
-                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="03l-gk-EwS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="03l-gk-EwS" firstAttribute="bottom" secondItem="Qf5-2x-iEa" secondAttribute="top" id="4xF-bc-bJc"/>
-                            <constraint firstItem="03l-gk-EwS" firstAttribute="top" secondItem="yAO-el-6Ob" secondAttribute="bottom" id="Re8-re-aiA"/>
+                            <constraint firstItem="03l-gk-EwS" firstAttribute="top" secondItem="yAO-el-6Ob" secondAttribute="bottom" constant="-64" id="Re8-re-aiA"/>
                             <constraint firstAttribute="trailing" secondItem="03l-gk-EwS" secondAttribute="trailing" id="isv-Xo-9Bg"/>
                             <constraint firstItem="03l-gk-EwS" firstAttribute="leading" secondItem="87W-Kn-uUY" secondAttribute="leading" id="uxu-54-sUh"/>
                         </constraints>
@@ -1438,8 +1438,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hk5-Ey-ZLZ">
-                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C9Y-DS-CwQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Rxx-Wh-OZw" id="w5n-WI-DNd"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hk5-Ey-ZLZ">
+                                <rect key="frame" x="0.0" y="643" width="414" height="44"/>
                                 <items>
                                     <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="l3t-Hc-3Z1"/>
                                     <barButtonItem image="undo-26.png" id="khe-fH-S73">
@@ -1467,23 +1474,16 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C9Y-DS-CwQ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="507"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="Rxx-Wh-OZw" id="w5n-WI-DNd"/>
-                                </connections>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hk5-Ey-ZLZ" firstAttribute="top" secondItem="C9Y-DS-CwQ" secondAttribute="bottom" id="CrN-fZ-a9E"/>
-                            <constraint firstAttribute="trailing" secondItem="C9Y-DS-CwQ" secondAttribute="trailing" id="VVa-Og-b2x"/>
-                            <constraint firstItem="C9Y-DS-CwQ" firstAttribute="trailing" secondItem="hk5-Ey-ZLZ" secondAttribute="trailing" id="VcH-tV-dTR"/>
-                            <constraint firstItem="C9Y-DS-CwQ" firstAttribute="top" secondItem="BBi-95-eNN" secondAttribute="top" id="f3f-QX-Exz"/>
-                            <constraint firstItem="hk5-Ey-ZLZ" firstAttribute="leading" secondItem="BBi-95-eNN" secondAttribute="leading" id="nPs-0B-jEK"/>
-                            <constraint firstItem="hk5-Ey-ZLZ" firstAttribute="bottom" secondItem="6Zg-Zn-sYr" secondAttribute="top" id="sME-mn-Ip1"/>
-                            <constraint firstItem="hk5-Ey-ZLZ" firstAttribute="leading" secondItem="C9Y-DS-CwQ" secondAttribute="leading" id="w5e-I6-Vh0"/>
+                            <constraint firstItem="C9Y-DS-CwQ" firstAttribute="top" secondItem="BBi-95-eNN" secondAttribute="top" id="9K6-0Z-pRD"/>
+                            <constraint firstItem="C9Y-DS-CwQ" firstAttribute="leading" secondItem="BBi-95-eNN" secondAttribute="leading" id="Qwf-Ls-y5u"/>
+                            <constraint firstAttribute="trailing" secondItem="C9Y-DS-CwQ" secondAttribute="trailing" id="dhp-QM-lbR"/>
+                            <constraint firstItem="C9Y-DS-CwQ" firstAttribute="leading" secondItem="hk5-Ey-ZLZ" secondAttribute="leading" id="oe4-xX-rFj"/>
+                            <constraint firstItem="C9Y-DS-CwQ" firstAttribute="trailing" secondItem="hk5-Ey-ZLZ" secondAttribute="trailing" id="p0G-SS-nZh"/>
+                            <constraint firstItem="hk5-Ey-ZLZ" firstAttribute="top" secondItem="C9Y-DS-CwQ" secondAttribute="bottom" id="sv8-Ae-pUR"/>
+                            <constraint firstItem="hk5-Ey-ZLZ" firstAttribute="bottom" secondItem="6Zg-Zn-sYr" secondAttribute="top" id="wyA-ea-sMu"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -1496,7 +1496,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDz-2v-LeY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5073" y="1685"/>
+            <point key="canvasLocation" x="5071.0144927536239" y="1684.2391304347827"/>
         </scene>
         <!--学内地図-->
         <scene sceneID="AIq-eJ-yVK">
@@ -1510,17 +1510,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ibh-qv-pX3">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ibh-qv-pX3">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Ibh-qv-pX3" secondAttribute="trailing" id="7ji-9b-ggs"/>
-                            <constraint firstItem="Ibh-qv-pX3" firstAttribute="bottom" secondItem="jW9-Wu-e6c" secondAttribute="top" id="Zqs-wX-roY"/>
-                            <constraint firstItem="Ibh-qv-pX3" firstAttribute="top" secondItem="nng-A1-aiC" secondAttribute="bottom" id="hS4-qN-XPy"/>
-                            <constraint firstItem="Ibh-qv-pX3" firstAttribute="leading" secondItem="Hyk-LC-fxj" secondAttribute="leading" id="u5N-zJ-yoI"/>
+                            <constraint firstItem="Ibh-qv-pX3" firstAttribute="top" secondItem="nng-A1-aiC" secondAttribute="bottom" id="1XO-uT-YJd"/>
+                            <constraint firstItem="Ibh-qv-pX3" firstAttribute="bottom" secondItem="jW9-Wu-e6c" secondAttribute="top" id="JXn-hr-afB"/>
+                            <constraint firstAttribute="trailing" secondItem="Ibh-qv-pX3" secondAttribute="trailing" id="Uca-Bg-4bH"/>
+                            <constraint firstItem="Ibh-qv-pX3" firstAttribute="leading" secondItem="Hyk-LC-fxj" secondAttribute="leading" id="qb0-aP-4By"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="学内地図" id="vvV-ww-yUw"/>
@@ -1530,7 +1530,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="duT-Mw-47N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5722" y="1685"/>
+            <point key="canvasLocation" x="5721" y="1684"/>
         </scene>
         <!--時間割-->
         <scene sceneID="0H4-xm-JNi">
@@ -1544,8 +1544,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a41-5n-CqH">
-                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7B7-h8-rRb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="wAU-Ld-40E" id="PNt-ZM-ddt"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a41-5n-CqH">
+                                <rect key="frame" x="0.0" y="643" width="414" height="44"/>
                                 <items>
                                     <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="VFS-zj-Rrr"/>
                                     <barButtonItem image="undo-26.png" id="Ifp-QS-lLM">
@@ -1573,25 +1580,18 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7B7-h8-rRb">
-                                <rect key="frame" x="0.0" y="64" width="600" height="443"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="wAU-Ld-40E" id="PNt-ZM-ddt"/>
-                                </connections>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7B7-h8-rRb" firstAttribute="top" secondItem="DlT-jS-kRw" secondAttribute="bottom" id="CTm-VD-SNy"/>
-                            <constraint firstItem="a41-5n-CqH" firstAttribute="top" secondItem="7B7-h8-rRb" secondAttribute="bottom" id="DDb-Ew-F23"/>
-                            <constraint firstItem="7B7-h8-rRb" firstAttribute="leading" secondItem="bPc-AY-nON" secondAttribute="leading" id="Ddu-3Y-HPS"/>
-                            <constraint firstItem="a41-5n-CqH" firstAttribute="bottom" secondItem="nN2-mW-QF3" secondAttribute="top" id="YQv-Eq-AG4"/>
-                            <constraint firstAttribute="trailing" secondItem="a41-5n-CqH" secondAttribute="trailing" id="i8q-wV-fuK"/>
-                            <constraint firstItem="7B7-h8-rRb" firstAttribute="leading" secondItem="a41-5n-CqH" secondAttribute="leading" id="leH-Wf-v6H"/>
+                            <constraint firstItem="7B7-h8-rRb" firstAttribute="leading" secondItem="a41-5n-CqH" secondAttribute="leading" id="590-2s-b4C"/>
+                            <constraint firstItem="7B7-h8-rRb" firstAttribute="leading" secondItem="bPc-AY-nON" secondAttribute="leading" id="7Xn-wD-Xjh"/>
+                            <constraint firstAttribute="trailing" secondItem="7B7-h8-rRb" secondAttribute="trailing" id="FSC-Nw-4qQ"/>
+                            <constraint firstItem="a41-5n-CqH" firstAttribute="top" secondItem="7B7-h8-rRb" secondAttribute="bottom" id="Lu3-Mw-K5g"/>
+                            <constraint firstItem="7B7-h8-rRb" firstAttribute="trailing" secondItem="a41-5n-CqH" secondAttribute="trailing" id="PHy-mY-Jnb"/>
+                            <constraint firstItem="7B7-h8-rRb" firstAttribute="top" secondItem="bPc-AY-nON" secondAttribute="top" id="SZV-Y6-7G4"/>
+                            <constraint firstItem="a41-5n-CqH" firstAttribute="bottom" secondItem="nN2-mW-QF3" secondAttribute="top" id="gKw-Q4-03n"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="時間割" image="week_view-32.png" id="0ve-er-5tR"/>
                     <navigationItem key="navigationItem" title="時間割" id="s2y-9n-Qg0"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -1635,11 +1635,11 @@
                         <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="u9S-tj-Bmf">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                            <tableView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="u9S-tj-Bmf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="623"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" placeholder="講義室の番号、または建物の名前を入力" id="THf-kH-r3Z">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                     <connections>
@@ -1648,10 +1648,10 @@
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" editingAccessoryType="disclosureIndicator" id="zOn-Q8-jap">
-                                        <rect key="frame" x="0.0" y="66" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="66" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zOn-Q8-jap" id="dEb-S4-odH">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -1694,7 +1694,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-1681" y="1245"/>
+            <point key="canvasLocation" x="-1681.1594202898552" y="1244.8369565217392"/>
         </scene>
         <!--設定-->
         <scene sceneID="D4n-DF-Jy3">
@@ -1879,6 +1879,5 @@
         <image name="services-32.png" width="32" height="32"/>
         <image name="train-32.png" width="32" height="32"/>
         <image name="undo-26.png" width="26" height="26"/>
-        <image name="week_view-32.png" width="32" height="32"/>
     </resources>
 </document>
