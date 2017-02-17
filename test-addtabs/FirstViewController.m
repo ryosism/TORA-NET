@@ -26,6 +26,7 @@
     BOOL isFirstTime = [ud boolForKey:@"KEY_isFirstTime"];
     NSLog(@"KEY_isFirstTime=%d",isFirstTime);
     
+    //初回起動ならEAIntroViewのビューコントローラーをmodalで出す
     if (isFirstTime) {
         [NSThread sleepForTimeInterval:0.8];
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"EAIntroView" bundle:[NSBundle mainBundle]];
@@ -50,6 +51,7 @@
     // ステータスバーのインジケータ非表示
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     
+    //ログインフォーム自動入力部分------------------
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];  // 取得
     BOOL b = [ud boolForKey:@"KEY_enableSwitch"];
     NSString *userID = [ud stringForKey:@"KEY_userID"];
@@ -67,6 +69,7 @@
         // サブミットするJSを実行する
         NSString *submit = @"jQuery('#loginSP').click();";
         [webView stringByEvaluatingJavaScriptFromString:submit];
+    // ----------------------------------------
     }
 }
 
