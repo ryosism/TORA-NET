@@ -64,7 +64,7 @@
         } else {
             // 検索に成功した場合の処理
             NSLog(@"検索に成功しました。");
-            //取得したオブジェクトの中の"num"のカラムをレコードごとに取得、からにしたテーブルリストに追加していく
+            //取得したオブジェクトの中の"num"のカラムをレコードごとに取得、空にしたテーブルリストに追加していく
             for (id object in objects){
                 [recentTableData addObject:[object objectForKey:@"num"]];
             }
@@ -75,6 +75,7 @@
             // テーブルビューをリロード
             [self.roomtable reloadData];
         }else{
+            //取得に失敗したらアラートを発生させる
             UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"接続失敗" message:@"講義室情報の更新に失敗しました。\n電波の良いところでもう一度お試しください。" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
             [alertView show];
         }
