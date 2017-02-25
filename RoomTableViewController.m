@@ -10,6 +10,7 @@
 #import "RoomTableViewController.h"
 #import "RoomDetailViewController.h"
 
+#import "SVProgressHUD.h"
 #import <NCMB/NCMB.h>
 
 @interface RoomTableViewController () <UISearchBarDelegate, UISearchDisplayDelegate,UITableViewDelegate, UITableViewDataSource>
@@ -185,6 +186,11 @@
         viewController.gettitle = self.room;
         self.searchflag=0;
     }
+    [SVProgressHUD show];
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    [SVProgressHUD dismiss];
 }
 
 #pragma mark 検索部分
