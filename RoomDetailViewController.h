@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface RoomDetailViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIWebView *roomwebview;
 
 @property (weak, nonatomic) IBOutlet UILabel *subtitle;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navigationbartitle;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic) NSString *gettitle;
 @end
