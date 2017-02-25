@@ -3,10 +3,12 @@ PODS:
     - EARestrictedScrollView (~> 1.1.0)
   - EARestrictedScrollView (1.1.0)
   - NCMB (2.3.3)
+  - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
   - EAIntroView (from `https://github.com/ealeksandrov/EAIntroView.git`)
   - NCMB (from `https://github.com/NIFTYCloud-mbaas/ncmb_ios.git`)
+  - SVProgressHUD
 
 EXTERNAL SOURCES:
   EAIntroView:
@@ -26,7 +28,8 @@ SPEC CHECKSUMS:
   EAIntroView: 3494b7bbd1212e3a4f7e8d16194a1b00e7b9abb2
   EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
   NCMB: 33829337aeb2e91a0fc1c771eeb77b642f7f6589
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: b6e70c0542c18f7fe34d0802808708368f68c14a
+PODFILE CHECKSUM: 384426156d155cecd9e53ba576b99c0b695f03c6
 
 COCOAPODS: 1.1.1

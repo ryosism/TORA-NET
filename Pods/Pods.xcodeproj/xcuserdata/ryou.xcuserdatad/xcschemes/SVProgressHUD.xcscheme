@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DA8B4D2F9C583C4AA16E230315E468A7'
-               BlueprintName = 'Pods-TORA-NET'
+               BlueprintIdentifier = '1C7CDBAAF666AA10A7646848A9CDA8C0'
+               BlueprintName = 'SVProgressHUD'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-TORA-NET.a'>
+               BuildableName = 'libSVProgressHUD.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

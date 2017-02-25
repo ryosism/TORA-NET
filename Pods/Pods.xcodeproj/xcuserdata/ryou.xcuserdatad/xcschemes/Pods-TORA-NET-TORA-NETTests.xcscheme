@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DD88FAAC1DD1F54608C29E0C39B1F74E'
+               BlueprintIdentifier = '9CACF58F325D3B2FC8F6D5E3C22A77B2'
                BlueprintName = 'Pods-TORA-NET-TORA-NETTests'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-TORA-NET-TORA-NETTests.a'>
