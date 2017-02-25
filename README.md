@@ -13,5 +13,5 @@ mbaasのAPIを実行させるためのライブラリ、画像データや講義
 https://github.com/ealeksandrov/EAIntroVieW <br />
 アプリのようこそ画面を作りたくて採用。いかに起動した時に「おおっ」と思ってくれるか、学生個人が作ったアプリに期待を持ってくれるかを考えて実装。
 ### SVProgressHUD
-https://github.com/SVProgressHUD/SVProgressHUD#swift <br />
+https://github.com/SVProgressHUD/SVProgressHUD <br />
 サイズがある画像を読み込む時に待ってる感が非常にあったため。超簡単でありがたい。
