@@ -40,7 +40,6 @@
     self.searchlist = appDelegate.roomlist;
     
     //UIRefreshControllの設定----------------------
-    //引っ張って更新するときにFTP上のjsonを取得する、オフラインなら取得せずローカルにあるものを引き続き使用する
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(controlRefresh:) forControlEvents:UIControlEventValueChanged];
     [self.roomtable addSubview:self.refreshControl];
@@ -80,9 +79,6 @@
             UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"接続失敗" message:@"講義室情報の更新に失敗しました。\n電波の良いところでもう一度お試しください。" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
             [alertView show];
         }
-
-        
-
     }];
 }
 
@@ -201,7 +197,7 @@
     self.dataSource = [self.searchlist filteredArrayUsingPredicate:predicate];
 }
 
--(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString;
+-(BOOL)searchDisplayController:(UISearchController *)controller shouldReloadTableForSearchString:(NSString *)searchString;
 {
     [self filterContainsWithSearchText:searchString];
     

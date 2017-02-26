@@ -19,7 +19,6 @@
     [super viewDidLoad];
     
     NSLog(@"Room number is %@",_gettitle);
-    
 
     self.subtitle.text = self.gettitle;
     self.navigationbartitle.title = self.gettitle;
@@ -59,7 +58,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

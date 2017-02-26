@@ -49,15 +49,4 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
-//以下、挫折した内容。選択したテーブルビューによって送るURLを変更する
-
-/*-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    NSIndexPath *indexpath = [self.tableview indexPathForSelectedRow];
-    NSURL *url = self.urls[indexpath.row];
-    FourthViewController *viewController = (FourthViewController *)[segue destinationViewController];
-    viewController.url = url;
-}
-*/
-
 @end

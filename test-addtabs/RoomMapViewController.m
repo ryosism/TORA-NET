@@ -121,23 +121,10 @@
         [self.locationManager startUpdatingLocation];
     }
     
-    //    if (nil == self.locationManager) {
-    //        self.locationManager = [[CLLocationManager alloc] init];
-    //        // iOS8以上
-    //        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
-    //            // アプリ起動時のみの位置情報を取得の許可を得る
-    //            [self.locationManager requestWhenInUseAuthorization];
-    //        }
-    //    }
-    
     self.mapview.showsUserLocation = YES;
     self.locationManager.distanceFilter = 5; //５メートルごとに更新
     self.mapview.userTrackingMode = MKUserTrackingModeFollowWithHeading;
-    //-------------------------------------------------------
-    //------------各講義室の座標を設定--------------------------
-    //-------------------------------------------------------
-    //-------------------------------------------------------
-    //ピンを落とす---------------------------------------------
+
     //ピンを全て削除
     [self.mapview removeAnnotations: self.mapview.annotations];
     // 新しいピンを作成
