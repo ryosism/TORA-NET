@@ -32,7 +32,6 @@
 		20DA21E61D9E2646001C26F9 /* icons8_cup.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21E51D9E2646001C26F9 /* icons8_cup.png */; };
 		4EF1295D49BE601ADBE5E8DD /* libPods-TORA-NET-TORA-NETTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C1DEF78552D3794EE79AF6 /* libPods-TORA-NET-TORA-NETTests.a */; };
 		DD4E546B1AEBFB21009A88AB /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E546A1AEBFB21009A88AB /* FifthViewController.m */; };
-		DD4E546E1AEBFB7E009A88AB /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E546D1AEBFB7E009A88AB /* ThirdViewController.m */; };
 		DD4E54711AEBFB88009A88AB /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E54701AEBFB88009A88AB /* FourthViewController.m */; };
 		DD88811D1B3A3AE700445487 /* RoomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD88811C1B3A3AE700445487 /* RoomTableViewController.m */; };
 		DDA557EE1B3A7B3E0044FD6C /* RoomDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA557ED1B3A7B3E0044FD6C /* RoomDetailViewController.m */; };
@@ -97,8 +96,6 @@
 		A05824253285BCC15B6F24C9 /* Pods-TORA-NET-TORA-NETTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TORA-NET-TORA-NETTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TORA-NET-TORA-NETTests/Pods-TORA-NET-TORA-NETTests.release.xcconfig"; sourceTree = "<group>"; };
 		DD4E54691AEBFB21009A88AB /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
 		DD4E546A1AEBFB21009A88AB /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
-		DD4E546C1AEBFB7E009A88AB /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
-		DD4E546D1AEBFB7E009A88AB /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		DD4E546F1AEBFB88009A88AB /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		DD4E54701AEBFB88009A88AB /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		DD88811B1B3A3AE700445487 /* RoomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomTableViewController.h; path = ../RoomTableViewController.h; sourceTree = "<group>"; };
@@ -232,8 +229,6 @@
 				203704FD1E3FA4F60064D78F /* EAIntroView.storyboard */,
 				DDB192B11AEA745900C0CDCF /* SecondViewController.h */,
 				DDB192B21AEA745900C0CDCF /* SecondViewController.m */,
-				DD4E546C1AEBFB7E009A88AB /* ThirdViewController.h */,
-				DD4E546D1AEBFB7E009A88AB /* ThirdViewController.m */,
 				DD4E546F1AEBFB88009A88AB /* FourthViewController.h */,
 				DD4E54701AEBFB88009A88AB /* FourthViewController.m */,
 				DD4E54691AEBFB21009A88AB /* FifthViewController.h */,
@@ -555,7 +550,6 @@
 				DDB192B31AEA745900C0CDCF /* SecondViewController.m in Sources */,
 				203704F61E3F3BA20064D78F /* EAIntroViewController.m in Sources */,
 				DDB192AD1AEA745900C0CDCF /* AppDelegate.m in Sources */,
-				DD4E546E1AEBFB7E009A88AB /* ThirdViewController.m in Sources */,
 				DDB192B01AEA745900C0CDCF /* FirstViewController.m in Sources */,
 				DDA557EE1B3A7B3E0044FD6C /* RoomDetailViewController.m in Sources */,
 				DD4E546B1AEBFB21009A88AB /* FifthViewController.m in Sources */,
