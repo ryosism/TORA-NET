@@ -27,7 +27,7 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     
-    self.scrollView.minimumZoomScale = 0.5;
+    self.scrollView.minimumZoomScale = 1.0;
     self.scrollView.maximumZoomScale = 3.0;
     
     BOOL bl = [_gettitle hasPrefix:@"["];
