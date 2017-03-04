@@ -1,7 +1,8 @@
 # TORA-NET
 
 [![Xcode](https://img.shields.io/badge/Xcode-8.2.1-orange.svg)](https://developer.apple.com/xcode/)
-[![CocoaPods](https://img.shields.io/badge/CocoaPdos-1.1.1-orange.svg)](https://cocoapods.org)
+[![CocoaPods](https://img.shields.io/badge/CocoaPdos-1.1.1-orange.svg)](https://cocoapods.org)<br />
+
 常時開発中
 
 README.mdも作る
