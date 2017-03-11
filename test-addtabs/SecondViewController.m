@@ -18,10 +18,10 @@
     [super viewDidLoad];
     
 //    学内地図（ピンが落ちていない）を表示
-    NSString     *path2    = [[NSBundle mainBundle] pathForResource:@"map" ofType:@"pdf"];
-    NSURLRequest *request2 = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path2]];
+    NSString     *path    = [[NSBundle mainBundle] pathForResource:@"map" ofType:@"pdf"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]];
     
-    [self.mapview loadRequest:request2];
+    [self.mapview loadRequest:request];
     
 }
 
