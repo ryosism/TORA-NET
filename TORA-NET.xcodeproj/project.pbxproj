@@ -19,14 +19,15 @@
 		203705101E40D3140064D78F /* bg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2037050F1E40D3140064D78F /* bg4.png */; };
 		208794CA1C04CF6100C1F206 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208794C81C04CF6100C1F206 /* Fabric.framework */; };
 		208794CB1C04CF6100C1F206 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208794C91C04CF6100C1F206 /* Crashlytics.framework */; };
-		20964EB31C202FCA007CF3DA /* libFlurry_7.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20964EB21C202FCA007CF3DA /* libFlurry_7.3.0.a */; };
 		20964EB51C202FDC007CF3DA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20964EB41C202FDC007CF3DA /* Security.framework */; };
 		209A18431C1FD9DC00BAF03E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209A18421C1FD9DC00BAF03E /* SystemConfiguration.framework */; };
 		209A3EB11E38D25900F1139C /* autoLoginSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 209A3EB01E38D25900F1139C /* autoLoginSetting.m */; };
 		209FDA131BB284E500649937 /* RoomMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209FDA121BB284E500649937 /* RoomMapViewController.m */; };
 		20A4E8171E73C6FB00277171 /* schoolbus_timetable.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 20A4E8161E73C6FB00277171 /* schoolbus_timetable.pdf */; };
 		20A4E81D1E73CCE100277171 /* Timetable-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A4E81C1E73CCE100277171 /* Timetable-32.png */; };
-		20A4E81F1E73CFB900277171 /* roomlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 20A4E81E1E73CFB900277171 /* roomlist.json */; };
+		20A4E8241E73D6C000277171 /* libFlurry_7.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A4E8231E73D6C000277171 /* libFlurry_7.3.0.a */; };
+		20A4E8281E73D79800277171 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20A4E8271E73D79800277171 /* Info.plist */; };
+		20A4E82A1E73D8CF00277171 /* roomlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 20A4E8291E73D8CF00277171 /* roomlist.json */; };
 		20DA21DE1D9E25ED001C26F9 /* services-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21DD1D9E25ED001C26F9 /* services-32.png */; };
 		20DA21E11D9E262C001C26F9 /* redo-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21DF1D9E262C001C26F9 /* redo-26.png */; };
 		20DA21E21D9E262C001C26F9 /* undo-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21E01D9E262C001C26F9 /* undo-26.png */; };
@@ -44,7 +45,6 @@
 		DDB192B31AEA745900C0CDCF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB192B21AEA745900C0CDCF /* SecondViewController.m */; };
 		DDB192B81AEA745900C0CDCF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB192B71AEA745900C0CDCF /* Images.xcassets */; };
 		DDB192BB1AEA745900C0CDCF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB192B91AEA745900C0CDCF /* LaunchScreen.xib */; };
-		DDB192C71AEA745900C0CDCF /* test_addtabsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB192C61AEA745900C0CDCF /* test_addtabsTests.m */; };
 		DDB192E51AEA91CD00C0CDCF /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB192E21AEA91CD00C0CDCF /* home-32.png */; };
 		DDB192E61AEA91CD00C0CDCF /* map_marker-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB192E31AEA91CD00C0CDCF /* map_marker-32.png */; };
 		DDB192E71AEA91CD00C0CDCF /* menu-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB192E41AEA91CD00C0CDCF /* menu-32.png */; };
@@ -71,30 +71,31 @@
 		203704F41E3F3BA20064D78F /* EAIntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EAIntroViewController.h; path = classes/ViewController/EAIntroViewController.h; sourceTree = "<group>"; };
 		203704F51E3F3BA20064D78F /* EAIntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EAIntroViewController.m; path = classes/ViewController/EAIntroViewController.m; sourceTree = "<group>"; };
 		203704FD1E3FA4F60064D78F /* EAIntroView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EAIntroView.storyboard; sourceTree = "<group>"; };
-		203705011E4046210064D78F /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg1.png; path = "test-addtabs/IntroView/bg1.png"; sourceTree = "<group>"; };
-		203705021E4046210064D78F /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg2.png; path = "test-addtabs/IntroView/bg2.png"; sourceTree = "<group>"; };
-		2037050B1E404A3E0064D78F /* tora-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tora-256.png"; path = "test-addtabs/IntroView/tora-256.png"; sourceTree = "<group>"; };
-		2037050D1E40AEB50064D78F /* bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg3.png; path = "test-addtabs/IntroView/bg3.png"; sourceTree = "<group>"; };
-		2037050F1E40D3140064D78F /* bg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg4.png; path = "test-addtabs/IntroView/bg4.png"; sourceTree = "<group>"; };
+		203705011E4046210064D78F /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg1.png; path = "TORA-NET/IntroView/bg1.png"; sourceTree = "<group>"; };
+		203705021E4046210064D78F /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg2.png; path = "TORA-NET/IntroView/bg2.png"; sourceTree = "<group>"; };
+		2037050B1E404A3E0064D78F /* tora-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tora-256.png"; path = "TORA-NET/IntroView/tora-256.png"; sourceTree = "<group>"; };
+		2037050D1E40AEB50064D78F /* bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg3.png; path = "TORA-NET/IntroView/bg3.png"; sourceTree = "<group>"; };
+		2037050F1E40D3140064D78F /* bg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg4.png; path = "TORA-NET/IntroView/bg4.png"; sourceTree = "<group>"; };
 		208794C81C04CF6100C1F206 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		208794C91C04CF6100C1F206 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
-		20964EB01C202FCA007CF3DA /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		20964EB11C202FCA007CF3DA /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
-		20964EB21C202FCA007CF3DA /* libFlurry_7.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.3.0.a; sourceTree = "<group>"; };
 		20964EB41C202FDC007CF3DA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		209A18421C1FD9DC00BAF03E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		209A3EAF1E38D25900F1139C /* autoLoginSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = autoLoginSetting.h; path = classes/autoLoginSetting.h; sourceTree = "<group>"; };
 		209A3EB01E38D25900F1139C /* autoLoginSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = autoLoginSetting.m; path = classes/autoLoginSetting.m; sourceTree = "<group>"; };
 		209FDA111BB284E500649937 /* RoomMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomMapViewController.h; path = classes/ViewController/RoomMapViewController.h; sourceTree = "<group>"; };
 		209FDA121BB284E500649937 /* RoomMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomMapViewController.m; path = classes/ViewController/RoomMapViewController.m; sourceTree = "<group>"; };
-		20A4E8161E73C6FB00277171 /* schoolbus_timetable.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = schoolbus_timetable.pdf; path = "test-addtabs/resource/schoolbus_timetable.pdf"; sourceTree = "<group>"; };
-		20A4E81C1E73CCE100277171 /* Timetable-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Timetable-32.png"; path = "test-addtabs/resource/Timetable-32.png"; sourceTree = "<group>"; };
-		20A4E81E1E73CFB900277171 /* roomlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = roomlist.json; path = "test-addtabs/resource/roomlist.json"; sourceTree = "<group>"; };
-		20DA21DD1D9E25ED001C26F9 /* services-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "services-32.png"; path = "test-addtabs/resource/services-32.png"; sourceTree = "<group>"; };
-		20DA21DF1D9E262C001C26F9 /* redo-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "redo-26.png"; path = "test-addtabs/resource/redo-26.png"; sourceTree = "<group>"; };
-		20DA21E01D9E262C001C26F9 /* undo-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "undo-26.png"; path = "test-addtabs/resource/undo-26.png"; sourceTree = "<group>"; };
-		20DA21E31D9E263E001C26F9 /* transparent32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = transparent32.png; path = "test-addtabs/resource/transparent32.png"; sourceTree = "<group>"; };
-		20DA21E51D9E2646001C26F9 /* icons8_cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icons8_cup.png; path = "test-addtabs/resource/icons8_cup.png"; sourceTree = "<group>"; };
+		20A4E8161E73C6FB00277171 /* schoolbus_timetable.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = schoolbus_timetable.pdf; path = "TORA-NET/resource/schoolbus_timetable.pdf"; sourceTree = "<group>"; };
+		20A4E81C1E73CCE100277171 /* Timetable-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Timetable-32.png"; path = "TORA-NET/resource/Timetable-32.png"; sourceTree = "<group>"; };
+		20A4E8211E73D6C000277171 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		20A4E8221E73D6C000277171 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
+		20A4E8231E73D6C000277171 /* libFlurry_7.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.3.0.a; sourceTree = "<group>"; };
+		20A4E8271E73D79800277171 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20A4E8291E73D8CF00277171 /* roomlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = roomlist.json; path = "TORA-NET/resource/roomlist.json"; sourceTree = "<group>"; };
+		20DA21DD1D9E25ED001C26F9 /* services-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "services-32.png"; path = "TORA-NET/resource/services-32.png"; sourceTree = "<group>"; };
+		20DA21DF1D9E262C001C26F9 /* redo-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "redo-26.png"; path = "TORA-NET/resource/redo-26.png"; sourceTree = "<group>"; };
+		20DA21E01D9E262C001C26F9 /* undo-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "undo-26.png"; path = "TORA-NET/resource/undo-26.png"; sourceTree = "<group>"; };
+		20DA21E31D9E263E001C26F9 /* transparent32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = transparent32.png; path = "TORA-NET/resource/transparent32.png"; sourceTree = "<group>"; };
+		20DA21E51D9E2646001C26F9 /* icons8_cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icons8_cup.png; path = "TORA-NET/resource/icons8_cup.png"; sourceTree = "<group>"; };
 		2F972392AA60379A4BBDA957 /* Pods-TORA-NET.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TORA-NET.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TORA-NET/Pods-TORA-NET.debug.xcconfig"; sourceTree = "<group>"; };
 		90C1DEF78552D3794EE79AF6 /* libPods-TORA-NET-TORA-NETTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TORA-NET-TORA-NETTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05824253285BCC15B6F24C9 /* Pods-TORA-NET-TORA-NETTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TORA-NET-TORA-NETTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TORA-NET-TORA-NETTests/Pods-TORA-NET-TORA-NETTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,9 +107,8 @@
 		DD88811C1B3A3AE700445487 /* RoomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomTableViewController.m; path = classes/ViewController/RoomTableViewController.m; sourceTree = "<group>"; };
 		DDA557EC1B3A7B3E0044FD6C /* RoomDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomDetailViewController.h; path = classes/ViewController/RoomDetailViewController.h; sourceTree = "<group>"; };
 		DDA557ED1B3A7B3E0044FD6C /* RoomDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomDetailViewController.m; path = classes/ViewController/RoomDetailViewController.m; sourceTree = "<group>"; };
-		DDAA13C11AF0633400FB0B8C /* map.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = map.pdf; path = "test-addtabs/resource/map.pdf"; sourceTree = "<group>"; };
+		DDAA13C11AF0633400FB0B8C /* map.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = map.pdf; path = "TORA-NET/resource/map.pdf"; sourceTree = "<group>"; };
 		DDB192A41AEA745900C0CDCF /* TORA-NET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TORA-NET.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDB192A81AEA745900C0CDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB192A91AEA745900C0CDCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DDB192AB1AEA745900C0CDCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = classes/AppDelegate.h; sourceTree = "<group>"; };
 		DDB192AC1AEA745900C0CDCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = classes/AppDelegate.m; sourceTree = "<group>"; };
@@ -119,12 +119,10 @@
 		DDB192B71AEA745900C0CDCF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DDB192BA1AEA745900C0CDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DDB192C01AEA745900C0CDCF /* TORA-NETTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TORA-NETTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDB192C51AEA745900C0CDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDB192C61AEA745900C0CDCF /* test_addtabsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test_addtabsTests.m; sourceTree = "<group>"; };
-		DDB192E21AEA91CD00C0CDCF /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-32.png"; path = "test-addtabs/resource/home-32.png"; sourceTree = "<group>"; };
-		DDB192E31AEA91CD00C0CDCF /* map_marker-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map_marker-32.png"; path = "test-addtabs/resource/map_marker-32.png"; sourceTree = "<group>"; };
-		DDB192E41AEA91CD00C0CDCF /* menu-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-32.png"; path = "test-addtabs/resource/menu-32.png"; sourceTree = "<group>"; };
-		DDB192E81AEA922700C0CDCF /* train-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "train-32.png"; path = "test-addtabs/resource/train-32.png"; sourceTree = "<group>"; };
+		DDB192E21AEA91CD00C0CDCF /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-32.png"; path = "TORA-NET/resource/home-32.png"; sourceTree = "<group>"; };
+		DDB192E31AEA91CD00C0CDCF /* map_marker-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map_marker-32.png"; path = "TORA-NET/resource/map_marker-32.png"; sourceTree = "<group>"; };
+		DDB192E41AEA91CD00C0CDCF /* menu-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-32.png"; path = "TORA-NET/resource/menu-32.png"; sourceTree = "<group>"; };
+		DDB192E81AEA922700C0CDCF /* train-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "train-32.png"; path = "TORA-NET/resource/train-32.png"; sourceTree = "<group>"; };
 		DDBB802F1B3E4F0400DAF249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,11 +131,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20A4E8241E73D6C000277171 /* libFlurry_7.3.0.a in Frameworks */,
 				200348091CCF5D8D000DC110 /* CoreLocation.framework in Frameworks */,
 				200348071CCF4EF5000DC110 /* MapKit.framework in Frameworks */,
 				20964EB51C202FDC007CF3DA /* Security.framework in Frameworks */,
 				209A18431C1FD9DC00BAF03E /* SystemConfiguration.framework in Frameworks */,
-				20964EB31C202FCA007CF3DA /* libFlurry_7.3.0.a in Frameworks */,
 				208794CB1C04CF6100C1F206 /* Crashlytics.framework in Frameworks */,
 				208794CA1C04CF6100C1F206 /* Fabric.framework in Frameworks */,
 				1FBE894A9557811E44AC9100 /* libPods-TORA-NET.a in Frameworks */,
@@ -155,12 +153,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20964EAF1C202FCA007CF3DA /* Flurry */ = {
+		20A4E8201E73D6C000277171 /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
-				20964EB01C202FCA007CF3DA /* Flurry.h */,
-				20964EB11C202FCA007CF3DA /* FlurryWatch.h */,
-				20964EB21C202FCA007CF3DA /* libFlurry_7.3.0.a */,
+				20A4E8211E73D6C000277171 /* Flurry.h */,
+				20A4E8221E73D6C000277171 /* FlurryWatch.h */,
+				20A4E8231E73D6C000277171 /* libFlurry_7.3.0.a */,
 			);
 			path = Flurry;
 			sourceTree = "<group>";
@@ -179,12 +177,12 @@
 		DD4E54781AEC7716009A88AB /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				20A4E81E1E73CFB900277171 /* roomlist.json */,
 				203705011E4046210064D78F /* bg1.png */,
 				203705021E4046210064D78F /* bg2.png */,
 				2037050D1E40AEB50064D78F /* bg3.png */,
 				2037050F1E40D3140064D78F /* bg4.png */,
 				2037050B1E404A3E0064D78F /* tora-256.png */,
+				20A4E8291E73D8CF00277171 /* roomlist.json */,
 				DDAA13C11AF0633400FB0B8C /* map.pdf */,
 				20A4E8161E73C6FB00277171 /* schoolbus_timetable.pdf */,
 				20DA21DD1D9E25ED001C26F9 /* services-32.png */,
@@ -206,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				DDB192A61AEA745900C0CDCF /* TORA-NET */,
-				DDB192C31AEA745900C0CDCF /* TORA-NET */,
 				DDB192A51AEA745900C0CDCF /* Products */,
 				3470B7DCE99E5F3922457313 /* Pods */,
 				EEDDC2F507447D495EEC712D /* Frameworks */,
@@ -253,8 +250,7 @@
 				DDDABFA61B0E49C200B800AC /* Freakworks */,
 				DDB192A71AEA745900C0CDCF /* Supporting Files */,
 			);
-			name = "TORA-NET";
-			path = "test-addtabs";
+			path = "TORA-NET";
 			sourceTree = "<group>";
 		};
 		DDB192A71AEA745900C0CDCF /* Supporting Files */ = {
@@ -265,35 +261,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DDB192C31AEA745900C0CDCF /* TORA-NET */ = {
-			isa = PBXGroup;
-			children = (
-				DDB192C61AEA745900C0CDCF /* test_addtabsTests.m */,
-				DDB192C41AEA745900C0CDCF /* Supporting Files */,
-			);
-			name = "TORA-NET";
-			path = "test-addtabsTests";
-			sourceTree = "<group>";
-		};
-		DDB192C41AEA745900C0CDCF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DDB192C51AEA745900C0CDCF /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		DDDABFA61B0E49C200B800AC /* Freakworks */ = {
 			isa = PBXGroup;
 			children = (
+				20A4E8271E73D79800277171 /* Info.plist */,
 				200348081CCF5D8D000DC110 /* CoreLocation.framework */,
 				200348061CCF4EF5000DC110 /* MapKit.framework */,
 				20964EB41C202FDC007CF3DA /* Security.framework */,
 				209A18421C1FD9DC00BAF03E /* SystemConfiguration.framework */,
 				208794C81C04CF6100C1F206 /* Fabric.framework */,
 				208794C91C04CF6100C1F206 /* Crashlytics.framework */,
-				DDB192A81AEA745900C0CDCF /* Info.plist */,
-				20964EAF1C202FCA007CF3DA /* Flurry */,
+				20A4E8201E73D6C000277171 /* Flurry */,
 			);
 			name = Freakworks;
 			sourceTree = "<group>";
@@ -408,7 +386,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20A4E81F1E73CFB900277171 /* roomlist.json in Resources */,
 				20DA21E41D9E263E001C26F9 /* transparent32.png in Resources */,
 				DDB192E91AEA922700C0CDCF /* train-32.png in Resources */,
 				DDB192BB1AEA745900C0CDCF /* LaunchScreen.xib in Resources */,
@@ -418,9 +395,11 @@
 				203705041E4046210064D78F /* bg1.png in Resources */,
 				DDAA13C21AF0633400FB0B8C /* map.pdf in Resources */,
 				DDB192E51AEA91CD00C0CDCF /* home-32.png in Resources */,
+				20A4E8281E73D79800277171 /* Info.plist in Resources */,
 				20DA21DE1D9E25ED001C26F9 /* services-32.png in Resources */,
 				DDB192B81AEA745900C0CDCF /* Images.xcassets in Resources */,
 				20A4E8171E73C6FB00277171 /* schoolbus_timetable.pdf in Resources */,
+				20A4E82A1E73D8CF00277171 /* roomlist.json in Resources */,
 				203705101E40D3140064D78F /* bg4.png in Resources */,
 				DDB192E71AEA91CD00C0CDCF /* menu-32.png in Resources */,
 				20DA21E61D9E2646001C26F9 /* icons8_cup.png in Resources */,
@@ -571,7 +550,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB192C71AEA745900C0CDCF /* test_addtabsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,12 +682,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "test-addtabs/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TORA-NET/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/test-addtabs/Flurry",
+					"$(PROJECT_DIR)/TORA-NET/Flurry",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "TORA-NET";
@@ -735,12 +714,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "test-addtabs/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TORA-NET/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/test-addtabs/Flurry",
+					"$(PROJECT_DIR)/TORA-NET/Flurry",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "TORA-NET";
@@ -762,7 +742,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "test-addtabsTests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TORA-NET/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "TORA-NETTests";
@@ -779,7 +759,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "test-addtabsTests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TORA-NET/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "TORA-NETTests";
