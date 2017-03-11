@@ -33,6 +33,12 @@
     NSURLRequest *JRdownreq = [NSURLRequest requestWithURL:JRdown];
     [_webviewdown loadRequest: JRdownreq];
     
+    NSString     *path    = [[NSBundle mainBundle] pathForResource:@"schoolbus_timetable" ofType:@"pdf"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]];
+    
+    [self.schoolbus loadRequest:request];
+    
+    
     
     //NSURLRequest *request = [NSURLRequest requestWithURL:self.url];
     //[self.webview loadRequest:request];

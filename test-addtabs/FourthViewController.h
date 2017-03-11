@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIWebView *webviewup;
 @property (weak, nonatomic) IBOutlet UIWebView *webviewdown;
+@property (weak, nonatomic) IBOutlet UIWebView *schoolbus;
 
 @end
