@@ -10,7 +10,7 @@
 #import "RoomTableViewController.h"
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
-#import "Flurry/Flurry.h"
+#import "../Flurry/Flurry.h"
 
 #import <NCMB/NCMB.h>
 
