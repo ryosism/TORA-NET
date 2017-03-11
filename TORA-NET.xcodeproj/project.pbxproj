@@ -685,7 +685,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/test-addtabs/Flurry",
 					"$(PROJECT_DIR)/TORA-NET/Flurry",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
@@ -717,7 +716,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/test-addtabs/Flurry",
 					"$(PROJECT_DIR)/TORA-NET/Flurry",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "P-ken.Chubu.$(PRODUCT_NAME:rfc1034identifier)";
