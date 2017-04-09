@@ -18,3 +18,6 @@ https://github.com/ealeksandrov/EAIntroVieW <br />
 ### SVProgressHUD
 https://github.com/SVProgressHUD/SVProgressHUD <br />
 サイズがある画像を読み込む時に待ってる感が非常にあったため。超簡単でありがたい。
+
+## 学科からはユーザーの自己責任の上配布OKいただきました！
+履修オリエンテーションの時に情報工学科の学生全員への、紹介の時間をいただきました！やった！
