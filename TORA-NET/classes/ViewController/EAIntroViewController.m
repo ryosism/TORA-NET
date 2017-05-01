@@ -104,10 +104,13 @@
     NSLog(@"[intro setDelegate:self];");
 }
 
-- (void)introDidFinish:(EAIntroView *)introView{
+- (void)introWillFinish:(EAIntroView *)introView wasSkipped:(BOOL)wasSkipped{
+    NSLog(@"introWillFinished");
+    
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     [ud setBool:NO forKey:@"KEY_isFirstTime"];
     [ud synchronize];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
