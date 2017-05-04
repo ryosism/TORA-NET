@@ -140,7 +140,7 @@
         <!--神領→名古屋-->
         <scene sceneID="3ar-5i-Oib">
             <objects>
-                <viewController id="pfG-8E-bjJ" customClass="FourthViewController" sceneMemberID="viewController">
+                <viewController title="神領→名古屋" id="pfG-8E-bjJ" customClass="FourthViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ayi-jz-koi"/>
                         <viewControllerLayoutGuide type="bottom" id="uvy-6i-mYA"/>
@@ -197,7 +197,6 @@
                             <constraint firstItem="weh-kB-GPk" firstAttribute="top" secondItem="f2b-b0-Asc" secondAttribute="bottom" id="mPS-Fi-yhv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="神領→名古屋" id="3Pa-Rn-2ls"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -212,7 +211,7 @@
         <!--スクールバス時刻表-->
         <scene sceneID="HRq-9m-Ltm">
             <objects>
-                <viewController id="dAM-pY-4si" customClass="FourthViewController" sceneMemberID="viewController">
+                <viewController title="スクールバス時刻表" id="dAM-pY-4si" customClass="FourthViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WkB-vd-gBi"/>
                         <viewControllerLayoutGuide type="bottom" id="gu3-Nf-Jwi"/>
@@ -234,7 +233,6 @@
                             <constraint firstItem="QU8-sX-qcy" firstAttribute="leading" secondItem="aNS-oe-sDi" secondAttribute="leading" id="fUQ-XJ-7mz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="スクールバス時刻表" id="jb7-oF-8HJ"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -249,7 +247,7 @@
         <!--神領→高蔵寺-->
         <scene sceneID="hR4-tL-mKD">
             <objects>
-                <viewController id="Rtt-8Z-8dt" customClass="FourthViewController" sceneMemberID="viewController">
+                <viewController title="神領→高蔵寺" id="Rtt-8Z-8dt" customClass="FourthViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nTQ-mH-E0N"/>
                         <viewControllerLayoutGuide type="bottom" id="dwe-xS-YGx"/>
@@ -306,7 +304,6 @@
                             <constraint firstItem="7v7-6d-EVV" firstAttribute="bottom" secondItem="dwe-xS-YGx" secondAttribute="top" id="sYa-7d-Oes"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="神領→高蔵寺" id="qQX-sD-6UT"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -799,7 +796,7 @@
         <!--e-hon 丸善中部大学店　会員登録-->
         <scene sceneID="UCF-e6-XtA">
             <objects>
-                <viewController id="ZHg-JF-HdR" customClass="FifthViewController" sceneMemberID="viewController">
+                <viewController title="e-hon 丸善中部大学店　会員登録" id="ZHg-JF-HdR" customClass="FifthViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z1M-lt-BBf"/>
                         <viewControllerLayoutGuide type="bottom" id="knp-dO-qsc"/>
@@ -857,7 +854,6 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="e-hon 丸善中部大学店　会員登録" id="zft-rl-kUJ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="e_honregister" destination="iOT-rh-Tb6" id="sW3-Wo-VyX"/>
@@ -870,7 +866,7 @@
         <!--学生による授業評価-->
         <scene sceneID="yLa-86-m7m">
             <objects>
-                <viewController id="x1N-UP-zrr" customClass="FifthViewController" sceneMemberID="viewController">
+                <viewController title="学生による授業評価" id="x1N-UP-zrr" customClass="FifthViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C5N-4Y-ojc"/>
                         <viewControllerLayoutGuide type="bottom" id="HTU-KU-9ge"/>
@@ -927,7 +923,6 @@
                             <constraint firstItem="Tcx-2f-nz5" firstAttribute="bottom" secondItem="HTU-KU-9ge" secondAttribute="top" id="jao-Vt-KGe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="学生による授業評価" id="W2h-sy-cM5"/>
                     <connections>
                         <outlet property="hyouka" destination="oyE-Cm-7Op" id="9wg-e5-Mfr"/>
                     </connections>
@@ -939,7 +934,7 @@
         <!--e-hon 丸善中部大学店-->
         <scene sceneID="CBa-dX-Qhv">
             <objects>
-                <viewController id="Ywi-yS-PIk" customClass="FifthViewController" sceneMemberID="viewController">
+                <viewController title="e-hon 丸善中部大学店" id="Ywi-yS-PIk" customClass="FifthViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jjl-Q9-b35"/>
                         <viewControllerLayoutGuide type="bottom" id="9gZ-5D-KiX"/>
@@ -996,7 +991,6 @@
                             <constraint firstAttribute="trailing" secondItem="FTi-IW-dPt" secondAttribute="trailing" id="qBe-OA-Lmn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="e-hon 丸善中部大学店" id="NQa-yV-jNi"/>
                     <connections>
                         <outlet property="e_hon" destination="FTi-IW-dPt" id="6SE-fO-sGL"/>
                     </connections>
@@ -1008,7 +1002,7 @@
         <!--Webメール-->
         <scene sceneID="FJF-1N-2Ix">
             <objects>
-                <viewController id="Y1d-ht-YhF" customClass="FifthViewController" sceneMemberID="viewController">
+                <viewController title="Webメール" id="Y1d-ht-YhF" customClass="FifthViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qHX-ws-Nsd"/>
                         <viewControllerLayoutGuide type="bottom" id="w9C-h3-uNM"/>
@@ -1063,7 +1057,6 @@
                             <constraint firstItem="r6T-bF-cP8" firstAttribute="leading" secondItem="3BY-yI-Gfm" secondAttribute="leading" id="v5r-5N-4TV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Webメール" id="693-e4-vUM"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -1078,7 +1071,7 @@
         <!--既存の問題-->
         <scene sceneID="cXb-t4-Klu">
             <objects>
-                <viewController id="VXt-cy-sY1" customClass="FifthViewController" sceneMemberID="viewController">
+                <viewController title="既存の問題" id="VXt-cy-sY1" customClass="FifthViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RvQ-kU-Mai"/>
                         <viewControllerLayoutGuide type="bottom" id="DeN-2X-lv8"/>
@@ -1103,7 +1096,6 @@
                             <constraint firstItem="t6G-w4-dfH" firstAttribute="bottom" secondItem="DeN-2X-lv8" secondAttribute="top" id="pLg-Jn-3XS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="既存の問題" id="n7f-pe-ECw"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -1119,7 +1111,7 @@
         <!--更新履歴-->
         <scene sceneID="fcs-MD-G1n">
             <objects>
-                <viewController id="Ak3-uu-dwF" customClass="FifthViewController" sceneMemberID="viewController">
+                <viewController title="更新履歴" id="Ak3-uu-dwF" customClass="FifthViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dUa-ex-BMk"/>
                         <viewControllerLayoutGuide type="bottom" id="ELZ-Ny-Nyt"/>
@@ -1144,7 +1136,6 @@
                             <constraint firstItem="lLI-hG-0UI" firstAttribute="bottom" secondItem="ELZ-Ny-Nyt" secondAttribute="top" id="uYA-LC-0gr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="更新履歴" id="zSf-cV-UW6"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -1440,7 +1431,7 @@
         <!--意見・感想を送る-->
         <scene sceneID="gvY-0k-vdP">
             <objects>
-                <viewController id="Rxx-Wh-OZw" customClass="FifthViewController" sceneMemberID="viewController">
+                <viewController title="意見・感想を送る" id="Rxx-Wh-OZw" customClass="FifthViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xS3-6a-G8s"/>
                         <viewControllerLayoutGuide type="bottom" id="6Zg-Zn-sYr"/>
@@ -1498,7 +1489,6 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="意見・感想を送る" id="6dd-0V-lSe"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
@@ -1512,7 +1502,7 @@
         <!--学内地図-->
         <scene sceneID="AIq-eJ-yVK">
             <objects>
-                <viewController id="lwn-XX-4a0" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController title="学内地図" id="lwn-XX-4a0" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nng-A1-aiC"/>
                         <viewControllerLayoutGuide type="bottom" id="jW9-Wu-e6c"/>
@@ -1534,7 +1524,6 @@
                             <constraint firstItem="Ibh-qv-pX3" firstAttribute="leading" secondItem="Hyk-LC-fxj" secondAttribute="leading" id="qb0-aP-4By"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="学内地図" id="vvV-ww-yUw"/>
                     <connections>
                         <outlet property="mapview" destination="Ibh-qv-pX3" id="NjJ-S2-ofH"/>
                     </connections>
