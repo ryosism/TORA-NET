@@ -521,7 +521,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="pee-Lx-dUB" kind="push" id="L10-1s-gnn"/>
+                                            <segue destination="pee-Lx-dUB" kind="show" id="L10-1s-gnn"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="gUe-if-fBO">
@@ -1345,7 +1345,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mEz-LW-XYF" kind="push" id="Aej-bw-k5e"/>
+                                    <segue destination="mEz-LW-XYF" kind="show" id="Aej-bw-k5e"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※画像が正しく表示されない場合は更新ボタンを押すと改善されます" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg9-AO-fl2">
@@ -1787,7 +1787,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eA9-bw-OcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5827.5" y="2648.2394366197182"/>
+            <point key="canvasLocation" x="5162" y="634"/>
         </scene>
         <!--講義室検索-->
         <scene sceneID="TzH-Ok-egP">
