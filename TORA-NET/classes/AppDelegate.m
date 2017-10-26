@@ -14,6 +14,8 @@
 
 #import <NCMB/NCMB.h>
 
+@import Firebase;
+
 @interface AppDelegate ()
 
 @end
@@ -26,6 +28,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // Firebaseの初期化
+    [FIRApp configure];
     
     [Fabric with:@[CrashlyticsKit]];
     
