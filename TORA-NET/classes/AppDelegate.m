@@ -27,10 +27,14 @@
 @synthesize roomlist;
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Firebaseの初期化
     [FIRApp configure];
+    
+    self.ref = [[FIRDatabase database] reference];
+    [[[_ref child:@"users"] child:@"hoge"] setValue:@{@"username": @"fuga"}];
     
     [Fabric with:@[CrashlyticsKit]];
     
