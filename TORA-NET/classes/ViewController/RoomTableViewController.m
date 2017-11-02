@@ -50,36 +50,7 @@
     NSMutableArray *recentTableData = [NSMutableArray array];
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
-//    // roomlistクラスを検索するクエリを作成
-//    NCMBQuery *query = [NCMBQuery queryWithClassName:@"roomlist"];
-//
-//    // scoreの降順でデータを取得するように設定する
-//    [query addAscendingOrder:@"num"];
-    
-//     データストアを検索
-//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-//        if (error) {
-//            // 検索に失敗した場合の処理
-//            NSLog(@"検索に失敗しました。エラーコード：%ld", error.code);
-//        } else {
-//            // 検索に成功した場合の処理
-//            NSLog(@"検索に成功しました。");
-//            //取得したオブジェクトの中の"num"のカラムをレコードごとに取得、空にしたテーブルリストに追加していく
-//            for (id object in objects){
-//                [recentTableData addObject:[object objectForKey:@"num"]];
-//            }
-//        }
-//        if (objects) {
-//            //値をappdelegateに置いてある共有変数にぶち込む
-//            appDelegate.roomlist = recentTableData;
-//            // テーブルビューをリロード
-//            [self.roomtable reloadData];
-//        }else{
-//            //取得に失敗したらアラートを発生させる
-//            UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"接続失敗" message:@"講義室情報の更新に失敗しました。\n電波の良いところでもう一度お試しください。" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-//            [alertView show];
-//        }
-//    }];
+
 }
 
 #pragma mark - 引っ張ってリフレッシュ
