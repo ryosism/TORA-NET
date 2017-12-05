@@ -11,6 +11,7 @@ target 'TORA-NET' do
 	pod 'SVProgressHUD'
     pod 'Firebase/Core'
     pod 'Firebase/Database'
+    pod 'Firebase/Storage'
     
   target 'TORA-NETTests' do
   end
