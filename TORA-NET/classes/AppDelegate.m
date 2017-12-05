@@ -34,12 +34,15 @@
     [FIRApp configure];
     
     self.ref = [[FIRDatabase database] reference];
-    [[[_ref child:@"users"] child:@"hoge"] setValue:@{@"username": @"fuga"}];
+//    [[_ref child:@"roomnum"] setValue:@{@"923": @"923.png"}];
+    
+    [_ref observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        NSDictionary *url = snapshot.value;
+        NSLog(@"%@",url[@"roomnum"]);
+    }];
     
     [Fabric with:@[CrashlyticsKit]];
-    
-    [Flurry startSession:@"2FB8KXS42NY2ZRPV6X56"];
-    
+
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];  // 取得
     NSMutableDictionary *defaults = [NSMutableDictionary dictionary];
     

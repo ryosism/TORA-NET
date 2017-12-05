@@ -25,7 +25,6 @@
 		209FDA131BB284E500649937 /* RoomMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209FDA121BB284E500649937 /* RoomMapViewController.m */; };
 		20A4E8171E73C6FB00277171 /* schoolbus_timetable.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 20A4E8161E73C6FB00277171 /* schoolbus_timetable.pdf */; };
 		20A4E81D1E73CCE100277171 /* Timetable-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A4E81C1E73CCE100277171 /* Timetable-32.png */; };
-		20A4E8241E73D6C000277171 /* libFlurry_7.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A4E8231E73D6C000277171 /* libFlurry_7.3.0.a */; };
 		20A4E82A1E73D8CF00277171 /* roomlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 20A4E8291E73D8CF00277171 /* roomlist.json */; };
 		20D2BFF31FA189510052F985 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20D2BFF21FA189510052F985 /* GoogleService-Info.plist */; };
 		20DA21DE1D9E25ED001C26F9 /* services-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21DD1D9E25ED001C26F9 /* services-32.png */; };
@@ -132,7 +131,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20A4E8241E73D6C000277171 /* libFlurry_7.3.0.a in Frameworks */,
 				200348091CCF5D8D000DC110 /* CoreLocation.framework in Frameworks */,
 				200348071CCF4EF5000DC110 /* MapKit.framework in Frameworks */,
 				20964EB51C202FDC007CF3DA /* Security.framework in Frameworks */,
