@@ -31,15 +31,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     _roomtable.tableHeaderView = _searchbar;
     _searchbar.delegate =self;
-    
-    //jsonデータからroomlistを取得-------------------------------
-//    appDelegate.path = [[NSBundle mainBundle] pathForResource:@"roomlist" ofType:@"json"];
-//    appDelegate.jsondata = [NSData dataWithContentsOfFile:appDelegate.path];
-//    appDelegate.roomlist = [NSJSONSerialization JSONObjectWithData:appDelegate.jsondata options:0 error:nil];
     
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     [notificationCenter addObserver:self selector:@selector(applyAllData) name:@"firebase" object:nil];
@@ -49,7 +43,6 @@
     [self.refreshControl addTarget:self action:@selector(controlRefresh:) forControlEvents:UIControlEventValueChanged];
     [self.roomtable addSubview:self.refreshControl];
     //--------------------------------------------
-
 }
 
 - (void)getRecentTabledata{
