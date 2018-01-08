@@ -12,9 +12,7 @@
 
 #import "SVProgressHUD.h"
 #import <NCMB/NCMB.h>
-
 @import Firebase;
-
 
 @interface RoomTableViewController () <UISearchBarDelegate, UISearchDisplayDelegate,UITableViewDelegate, UITableViewDataSource>
 
@@ -48,13 +46,13 @@
 - (void)getRecentTabledata{
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
-    self.ref = [[FIRDatabase database] reference];
-    
 //  firebaseからデータを取得、講義室データの辞書配列を*urlとして持ってくる
 //  NSNotificationCenterによってクロージャを発動させて無視されずに呼んでくれるようになる
     
+    self.ref = [[FIRDatabase database] reference];
     [_ref observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
         NSDictionary *url = snapshot.value;
+        appDelegate.gsData = url[@"roomnum"];
         appDelegate.roomlist = [url[@"roomnum"] allKeys];
         
         NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];

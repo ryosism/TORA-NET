@@ -6,8 +6,10 @@
 //  Copyright (c) 2015年 Ryo. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "RoomDetailViewController.h"
 #import "RoomMapViewController.h"
+@import Firebase;
 
 @interface RoomDetailViewController ()
 
@@ -25,31 +27,33 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated{
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    FIRStorage *storage = [FIRStorage storage];
+    
+    //firebaseの辞書型配列を使ってキーから該当講義室の画像へつながる値を手に入れる
+    //gs://tora-net.appspot.com/roomPic/923.png みたいな
+    NSString *gsURL = appDelegate.gsData[self.gettitle];
+    NSLog(@"%@",gsURL);
+    
+    //gsURLはここでfirebase storageの参照に使われる
+    FIRStorageReference *spaceRef = [storage referenceForURL:gsURL];
     
     self.scrollView.minimumZoomScale = 1.0;
     self.scrollView.maximumZoomScale = 3.0;
     
-    BOOL bl = [_gettitle hasPrefix:@"["];
-    if(bl==1)
-    {
-        NSURL        *nopic    = [NSURL URLWithString:@"https://mb.api.cloud.nifty.com/2013-09-01/applications/nRtYFHs36B0uKctM/publicFiles/nodata.png"];
-        NSLog(@"Request url is %@",nopic);
-        
-        NSData *myData = [NSData dataWithContentsOfURL:nopic];
-        UIImage *myImage = [UIImage imageWithData:myData];
-        self.imageView.image = myImage;
-    }else{
-        NSString *str1 = @"https://mb.api.cloud.nifty.com/2013-09-01/applications/nRtYFHs36B0uKctM/publicFiles/";
-        NSString *str2 = @".png";
-        str1 = [str1 stringByAppendingString:_gettitle];
-        
-        NSString *url = [str1 stringByAppendingString:str2];
-        NSLog(@"Request url is %@",url);
-        NSURL        *roomdetail    = [NSURL URLWithString:url];
-        NSData *myData = [NSData dataWithContentsOfURL:roomdetail];
-        UIImage *myImage = [UIImage imageWithData:myData];
-        self.imageView.image = myImage;
-    }
+    //firebase storageの参照からhttpsのURL(NSURL型)に変換させる
+    [spaceRef downloadURLWithCompletion:^(NSURL * _Nullable URL, NSError * _Nullable error) {
+        if (error != nil){
+            //URL作成失敗
+            NSLog(@"convertion failed");
+        }else{
+            //URL作成成功
+            NSData *myData = [NSData dataWithContentsOfURL:URL];
+            UIImage *myImage = [UIImage imageWithData:myData];
+            self.imageView.image = myImage;
+        }
+    }];
 }
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {

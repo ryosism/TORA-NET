@@ -21,8 +21,7 @@
 
 @implementation AppDelegate
 
-@synthesize path;
-@synthesize jsondata;
+@synthesize gsData;
 @synthesize roomlist;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -30,19 +29,10 @@
     // Firebaseの初期化
     [FIRApp configure];
     
-    self.ref = [[FIRDatabase database] reference];
-//    [[_ref child:@"roomnum"] setValue:@{@"923": @"923.png"}];
-    
-//    [_ref observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
-//        NSDictionary *url = snapshot.value;
-//        NSLog(@"%@",url[@"roomnum"]);
-//    }];
-    
     [Fabric with:@[CrashlyticsKit]];
 
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];  // 取得
     NSMutableDictionary *defaults = [NSMutableDictionary dictionary];
-    
     //初期値
     [defaults setObject:@"NO" forKey:@"KEY_enableSwitch"];
     [defaults setObject:@"" forKey:@"KEY_userID"];
