@@ -1,1 +1,0 @@
-../../../NCMB/NCMB/PrivateHeaders/NCMBObject+Private 2.h
