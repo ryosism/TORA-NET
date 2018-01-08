@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Firebase.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -15,6 +16,8 @@
 @property (strong, nonatomic) NSString *path;
 @property (strong, nonatomic) NSData *jsondata;
 @property (strong, nonatomic) NSArray *roomlist;
+
+@property (strong, nonatomic) FIRDatabaseReference *ref;
 
 @end
 

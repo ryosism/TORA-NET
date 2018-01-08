@@ -25,8 +25,7 @@
 		209FDA131BB284E500649937 /* RoomMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209FDA121BB284E500649937 /* RoomMapViewController.m */; };
 		20A4E8171E73C6FB00277171 /* schoolbus_timetable.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 20A4E8161E73C6FB00277171 /* schoolbus_timetable.pdf */; };
 		20A4E81D1E73CCE100277171 /* Timetable-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A4E81C1E73CCE100277171 /* Timetable-32.png */; };
-		20A4E8241E73D6C000277171 /* libFlurry_7.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A4E8231E73D6C000277171 /* libFlurry_7.3.0.a */; };
-		20A4E82A1E73D8CF00277171 /* roomlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 20A4E8291E73D8CF00277171 /* roomlist.json */; };
+		20D2BFF31FA189510052F985 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20D2BFF21FA189510052F985 /* GoogleService-Info.plist */; };
 		20DA21DE1D9E25ED001C26F9 /* services-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21DD1D9E25ED001C26F9 /* services-32.png */; };
 		20DA21E11D9E262C001C26F9 /* redo-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21DF1D9E262C001C26F9 /* redo-26.png */; };
 		20DA21E21D9E262C001C26F9 /* undo-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DA21E01D9E262C001C26F9 /* undo-26.png */; };
@@ -89,7 +88,7 @@
 		20A4E8221E73D6C000277171 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
 		20A4E8231E73D6C000277171 /* libFlurry_7.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.3.0.a; sourceTree = "<group>"; };
 		20A4E8271E73D79800277171 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20A4E8291E73D8CF00277171 /* roomlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = roomlist.json; path = "TORA-NET/resource/roomlist.json"; sourceTree = "<group>"; };
+		20D2BFF21FA189510052F985 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		20DA21DD1D9E25ED001C26F9 /* services-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "services-32.png"; path = "TORA-NET/resource/services-32.png"; sourceTree = "<group>"; };
 		20DA21DF1D9E262C001C26F9 /* redo-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "redo-26.png"; path = "TORA-NET/resource/redo-26.png"; sourceTree = "<group>"; };
 		20DA21E01D9E262C001C26F9 /* undo-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "undo-26.png"; path = "TORA-NET/resource/undo-26.png"; sourceTree = "<group>"; };
@@ -130,7 +129,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20A4E8241E73D6C000277171 /* libFlurry_7.3.0.a in Frameworks */,
 				200348091CCF5D8D000DC110 /* CoreLocation.framework in Frameworks */,
 				200348071CCF4EF5000DC110 /* MapKit.framework in Frameworks */,
 				20964EB51C202FDC007CF3DA /* Security.framework in Frameworks */,
@@ -181,7 +179,6 @@
 				2037050D1E40AEB50064D78F /* bg3.png */,
 				2037050F1E40D3140064D78F /* bg4.png */,
 				2037050B1E404A3E0064D78F /* tora-256.png */,
-				20A4E8291E73D8CF00277171 /* roomlist.json */,
 				DDAA13C11AF0633400FB0B8C /* map.pdf */,
 				20A4E8161E73C6FB00277171 /* schoolbus_timetable.pdf */,
 				20DA21DD1D9E25ED001C26F9 /* services-32.png */,
@@ -264,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				20A4E8271E73D79800277171 /* Info.plist */,
+				20D2BFF21FA189510052F985 /* GoogleService-Info.plist */,
 				200348081CCF5D8D000DC110 /* CoreLocation.framework */,
 				200348061CCF4EF5000DC110 /* MapKit.framework */,
 				20964EB41C202FDC007CF3DA /* Security.framework */,
@@ -335,7 +333,7 @@
 		DDB1929C1AEA745900C0CDCF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Ryo;
 				TargetAttributes = {
 					DDB192A31AEA745900C0CDCF = {
@@ -397,13 +395,13 @@
 				20DA21DE1D9E25ED001C26F9 /* services-32.png in Resources */,
 				DDB192B81AEA745900C0CDCF /* Images.xcassets in Resources */,
 				20A4E8171E73C6FB00277171 /* schoolbus_timetable.pdf in Resources */,
-				20A4E82A1E73D8CF00277171 /* roomlist.json in Resources */,
 				203705101E40D3140064D78F /* bg4.png in Resources */,
 				DDB192E71AEA91CD00C0CDCF /* menu-32.png in Resources */,
 				20DA21E61D9E2646001C26F9 /* icons8_cup.png in Resources */,
 				DDBB80301B3E4F0400DAF249 /* Main.storyboard in Resources */,
 				2037050C1E404A3E0064D78F /* tora-256.png in Resources */,
 				20DA21E21D9E262C001C26F9 /* undo-26.png in Resources */,
+				20D2BFF31FA189510052F985 /* GoogleService-Info.plist in Resources */,
 				20DA21E11D9E262C001C26F9 /* redo-26.png in Resources */,
 				DDB192E61AEA91CD00C0CDCF /* map_marker-32.png in Resources */,
 				203705051E4046210064D78F /* bg2.png in Resources */,
@@ -589,14 +587,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -637,14 +641,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

@@ -10,9 +10,10 @@
 #import "RoomTableViewController.h"
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
-#import "../Flurry/Flurry.h"
 
 #import <NCMB/NCMB.h>
+
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -24,16 +25,21 @@
 @synthesize jsondata;
 @synthesize roomlist;
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    // Firebaseの初期化
+    [FIRApp configure];
+    
+    self.ref = [[FIRDatabase database] reference];
+//    [[_ref child:@"roomnum"] setValue:@{@"923": @"923.png"}];
+    
+//    [_ref observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+//        NSDictionary *url = snapshot.value;
+//        NSLog(@"%@",url[@"roomnum"]);
+//    }];
+    
     [Fabric with:@[CrashlyticsKit]];
-    
-    [Flurry startSession:@"2FB8KXS42NY2ZRPV6X56"];
-    
-    // APIキーの設定とSDK初期化
-    [NCMB setApplicationKey:@"7b4ebd76d1d7e59fea7a1ddaaff2dcfe2c9461fb26b5a8d56a9e151e7f141666" clientKey:@"13bc5798871acb56e0139c4c1ee2559d33efc3480fedc3b9b4ac139d6a4a8b80"];
-    
+
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];  // 取得
     NSMutableDictionary *defaults = [NSMutableDictionary dictionary];
     

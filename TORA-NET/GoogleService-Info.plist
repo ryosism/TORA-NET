@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>198005135647-klugt3vcbj0hhak761u34ovdb67ch3r3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.198005135647-klugt3vcbj0hhak761u34ovdb67ch3r3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCg6mhnaKGzb9lu9NwWufG3lI8gbr6OhJw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>198005135647</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>P-ken.Chubu.TORA-NET</string>
+	<key>PROJECT_ID</key>
+	<string>tora-net</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tora-net.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:198005135647:ios:a93cb0ba852cfafe</string>
+	<key>DATABASE_URL</key>
+	<string>https://tora-net.firebaseio.com</string>
+</dict>
+</plist>
