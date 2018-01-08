@@ -11,7 +11,6 @@
 #import "RoomDetailViewController.h"
 
 #import "SVProgressHUD.h"
-#import <NCMB/NCMB.h>
 @import Firebase;
 
 @interface RoomTableViewController () <UISearchBarDelegate, UISearchDisplayDelegate,UITableViewDelegate, UITableViewDataSource>
@@ -54,6 +53,8 @@
         NSDictionary *url = snapshot.value;
         appDelegate.gsData = url[@"roomnum"];
         appDelegate.roomlist = [url[@"roomnum"] allKeys];
+        NSSortDescriptor* dec = [NSSortDescriptor sortDescriptorWithKey:@"" ascending:YES];
+        appDelegate.roomlist = [appDelegate.roomlist sortedArrayUsingDescriptors:[NSArray arrayWithObject:dec]];
         
         NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
         [notificationCenter postNotificationName:@"firebase" object:nil];

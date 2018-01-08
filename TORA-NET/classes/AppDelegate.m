@@ -11,8 +11,6 @@
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 
-#import <NCMB/NCMB.h>
-
 @import Firebase;
 
 @interface AppDelegate ()
