@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Firebase.h>
 
 @interface RoomTableViewController : UIViewController
 
@@ -21,5 +22,7 @@
 @property (nonatomic) NSArray *roomlist;
 
 @property(nonatomic) UIRefreshControl *refreshControl;
+
+@property (strong, nonatomic) FIRDatabaseReference *ref;
 
 @end

@@ -10,7 +10,6 @@
 #import "RoomTableViewController.h"
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
-#import "../Flurry/Flurry.h"
 
 #import <NCMB/NCMB.h>
 
@@ -26,8 +25,6 @@
 @synthesize jsondata;
 @synthesize roomlist;
 
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Firebaseの初期化
@@ -36,10 +33,10 @@
     self.ref = [[FIRDatabase database] reference];
 //    [[_ref child:@"roomnum"] setValue:@{@"923": @"923.png"}];
     
-    [_ref observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
-        NSDictionary *url = snapshot.value;
-        NSLog(@"%@",url[@"roomnum"]);
-    }];
+//    [_ref observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+//        NSDictionary *url = snapshot.value;
+//        NSLog(@"%@",url[@"roomnum"]);
+//    }];
     
     [Fabric with:@[CrashlyticsKit]];
 

@@ -13,6 +13,9 @@
 #import "SVProgressHUD.h"
 #import <NCMB/NCMB.h>
 
+@import Firebase;
+
+
 @interface RoomTableViewController () <UISearchBarDelegate, UISearchDisplayDelegate,UITableViewDelegate, UITableViewDataSource>
 
 @end
@@ -34,36 +37,51 @@
     _searchbar.delegate =self;
     
     //jsonデータからroomlistを取得-------------------------------
-    appDelegate.path = [[NSBundle mainBundle] pathForResource:@"roomlist" ofType:@"json"];
-    appDelegate.jsondata = [NSData dataWithContentsOfFile:appDelegate.path];
-    appDelegate.roomlist = [NSJSONSerialization JSONObjectWithData:appDelegate.jsondata options:0 error:nil];
-    self.searchlist = appDelegate.roomlist;
+//    appDelegate.path = [[NSBundle mainBundle] pathForResource:@"roomlist" ofType:@"json"];
+//    appDelegate.jsondata = [NSData dataWithContentsOfFile:appDelegate.path];
+//    appDelegate.roomlist = [NSJSONSerialization JSONObjectWithData:appDelegate.jsondata options:0 error:nil];
+    
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    [notificationCenter addObserver:self selector:@selector(applyAllData) name:@"firebase" object:nil];
     
     //UIRefreshControllの設定----------------------
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(controlRefresh:) forControlEvents:UIControlEventValueChanged];
     [self.roomtable addSubview:self.refreshControl];
     //--------------------------------------------
+
 }
 
 - (void)getRecentTabledata{
-    NSMutableArray *recentTableData = [NSMutableArray array];
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
+    self.ref = [[FIRDatabase database] reference];
+    
+//  firebaseからデータを取得、講義室データの辞書配列を*urlとして持ってくる
+//  NSNotificationCenterによってクロージャを発動させて無視されずに呼んでくれるようになる
+    
+    [_ref observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        NSDictionary *url = snapshot.value;
+        appDelegate.roomlist = [url[@"roomnum"] allKeys];
+        
+        NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+        [notificationCenter postNotificationName:@"firebase" object:nil];
+    }];
+}
 
+- (void)applyAllData{
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    self.searchlist = appDelegate.roomlist;
+    self.dataSource = appDelegate.roomlist;
+    [self.roomtable reloadData];
 }
 
 #pragma mark - 引っ張ってリフレッシュ
 - (void)controlRefresh:(id)sender
 {
-    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    
     //データのコピー、各変数へデータを更新させる
-        //ここで一気にテーブルビューも更新するよ！
-        [self getRecentTabledata];
-    self.dataSource = appDelegate.roomlist;
-    self.searchlist = appDelegate.roomlist;
-
+    [self getRecentTabledata];
     // 更新終了
     [self.refreshControl endRefreshing];
 }
