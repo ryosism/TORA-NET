@@ -42,7 +42,7 @@
     NSURLRequest *updatesreq = [NSURLRequest requestWithURL:updates];
     [_updates loadRequest: updatesreq];
     
-    NSURL        *opac    = [NSURL URLWithString:@"http://opac.bliss.chubu.ac.jp/mobileopac/"];
+    NSURL        *opac    = [NSURL URLWithString:@"https://library.bliss.chubu.ac.jp/"];
     NSURLRequest *opacreq = [NSURLRequest requestWithURL:opac];
     [_opac loadRequest: opacreq];
     
